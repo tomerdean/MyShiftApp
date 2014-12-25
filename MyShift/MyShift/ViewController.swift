@@ -44,6 +44,10 @@ class ViewController: UIViewController {
         let month = components.month
         let year = components.year
         let day = components.day
+        let www = components.weekday
+        
+        println("day")
+        println(String(www))
         
         //insertShift("qxVIS4YcNY", date, "morning")
         //deleteShift("baYS4gZ9Ja")
