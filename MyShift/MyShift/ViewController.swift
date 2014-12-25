@@ -8,12 +8,32 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+var managerDayOfWeek = 0
 
-    @IBOutlet weak var usernameField: UITextField!
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var txtUsername: UITextField!
+    
+    @IBAction func logIn(sender: AnyObject) {
+        if(txtUsername.text == "admin")
+        {
+            let managerVC = self.storyboard?.instantiateViewControllerWithIdentifier("sbManager") as ViewControllerManager
+            
+            self.presentViewController(managerVC, animated: true, completion: nil)
+        }
+        else {
+        
+            let employeeVC = self.storyboard?.instantiateViewControllerWithIdentifier("sbEmployee") as ViewControllerManager
+            
+            self.presentViewController(employeeVC, animated: true, completion: nil)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        println("manager choose: \(managerDayOfWeek + 1)")
+        
         loadParse()
 
         let date = NSDate()
@@ -27,7 +47,7 @@ class ViewController: UIViewController {
         
         //insertShift("qxVIS4YcNY", date, "morning")
         //deleteShift("baYS4gZ9Ja")
-        changeShiftStatus("KFED5aZq7d", 1)
+        //changeShiftStatus("KFED5aZq7d", 1)
         
         
     }
