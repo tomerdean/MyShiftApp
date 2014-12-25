@@ -8,12 +8,16 @@
 
 import UIKit
 
+var managerDayOfWeek = 0
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var usernameField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        println("manager choose: \(managerDayOfWeek + 1)")
+        
         loadParse()
 
         let date = NSDate()
