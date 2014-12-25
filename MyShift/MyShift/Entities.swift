@@ -13,14 +13,17 @@ func loadParse(){
     Parse.setApplicationId("zoiIuFxCdS9iNpTtDQQ1hJvkVJ87bhVH86k3GEgZ", clientKey: "EBCJVh2bKgD3iKPKKW5XfCwAYGCbuOpK62MOKyQF")
 }
 
-func getCurrShifts(user_id: String){
+func getCurrShifts(user_id: String) -> [AnyObject]{
     
+    var result: []
     var query = PFQuery(className: "Shifts")
     query.whereKey("user_id", equalTo: user_id)
+    query.whereKey("status", equalTo: 1)
     query.findObjectsInBackgroundWithBlock{
         (objects: [AnyObject]!, error: NSError!) -> Void in
-        NSLog("%@", objects)
+        //println(objects[0].objectForKey("shift_date") as NSDate)
+       // result = objects
     }
     
-    
+    return result
 }
