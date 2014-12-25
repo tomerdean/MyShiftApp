@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  TestProj
+//  MyShift
 //
 //  Created by Tom Dean on 12/25/14.
 //  Copyright (c) 2014 TeamTop. All rights reserved.
@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        println("test peleg 1 2 3 4 5peleg aran omri")
     }
 
     override func didReceiveMemoryWarning() {

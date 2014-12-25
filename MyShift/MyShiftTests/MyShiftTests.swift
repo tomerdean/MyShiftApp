@@ -1,6 +1,6 @@
 //
-//  TestProjTests.swift
-//  TestProjTests
+//  MyShiftTests.swift
+//  MyShiftTests
 //
 //  Created by Tom Dean on 12/25/14.
 //  Copyright (c) 2014 TeamTop. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class TestProjTests: XCTestCase {
+class MyShiftTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CA6B75FE1A4C3B4600138996"
-               BuildableName = "TestProj.app"
-               BlueprintName = "TestProj"
-               ReferencedContainer = "container:TestProj.xcodeproj">
+               BlueprintIdentifier = "CA6B762C1A4C44DE00138996"
+               BuildableName = "MyShift.app"
+               BlueprintName = "MyShift"
+               ReferencedContainer = "container:MyShift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CA6B76131A4C3B4600138996"
-               BuildableName = "TestProjTests.xctest"
-               BlueprintName = "TestProjTests"
-               ReferencedContainer = "container:TestProj.xcodeproj">
+               BlueprintIdentifier = "CA6B76411A4C44DE00138996"
+               BuildableName = "MyShiftTests.xctest"
+               BlueprintName = "MyShiftTests"
+               ReferencedContainer = "container:MyShift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CA6B76131A4C3B4600138996"
-               BuildableName = "TestProjTests.xctest"
-               BlueprintName = "TestProjTests"
-               ReferencedContainer = "container:TestProj.xcodeproj">
+               BlueprintIdentifier = "CA6B76411A4C44DE00138996"
+               BuildableName = "MyShiftTests.xctest"
+               BlueprintName = "MyShiftTests"
+               ReferencedContainer = "container:MyShift.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CA6B75FE1A4C3B4600138996"
-            BuildableName = "TestProj.app"
-            BlueprintName = "TestProj"
-            ReferencedContainer = "container:TestProj.xcodeproj">
+            BlueprintIdentifier = "CA6B762C1A4C44DE00138996"
+            BuildableName = "MyShift.app"
+            BlueprintName = "MyShift"
+            ReferencedContainer = "container:MyShift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CA6B75FE1A4C3B4600138996"
-            BuildableName = "TestProj.app"
-            BlueprintName = "TestProj"
-            ReferencedContainer = "container:TestProj.xcodeproj">
+            BlueprintIdentifier = "CA6B762C1A4C44DE00138996"
+            BuildableName = "MyShift.app"
+            BlueprintName = "MyShift"
+            ReferencedContainer = "container:MyShift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CA6B75FE1A4C3B4600138996"
-            BuildableName = "TestProj.app"
-            BlueprintName = "TestProj"
-            ReferencedContainer = "container:TestProj.xcodeproj">
+            BlueprintIdentifier = "CA6B762C1A4C44DE00138996"
+            BuildableName = "MyShift.app"
+            BlueprintName = "MyShift"
+            ReferencedContainer = "container:MyShift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
