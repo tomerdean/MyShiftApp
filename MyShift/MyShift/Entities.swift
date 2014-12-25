@@ -45,3 +45,15 @@ func deleteShift(objectId: String) {
     result[0].delete()
 }
 
+func changeShiftStatus(shiftId: String, status: Int){
+    var query = PFQuery(className: "Shifts")
+    query.whereKey("objectId", equalTo: shiftId)
+    var result = query.findObjects()
+    result[0].setObject(status, forKey: "status")
+    
+    result[0].save()
+}
+
+
+
+

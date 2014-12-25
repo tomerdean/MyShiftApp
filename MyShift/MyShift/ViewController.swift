@@ -25,7 +25,8 @@ class ViewController: UIViewController {
         let day = components.day
         
         //insertShift("qxVIS4YcNY", date, "morning")
-        deleteShift("baYS4gZ9Ja")
+        //deleteShift("baYS4gZ9Ja")
+        changeShiftStatus("KFED5aZq7d", 1)
         
         
     }
