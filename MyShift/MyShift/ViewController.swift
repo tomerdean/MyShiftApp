@@ -14,10 +14,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         loadParse()
-        var x = getCurrShifts("bcn69t8zLD")
+
+        let date = NSDate()
+        let calendar = NSCalendar.currentCalendar()
+        let components = calendar.components(.CalendarUnitHour | .CalendarUnitMinute | .CalendarUnitMonth | .CalendarUnitYear | .CalendarUnitDay, fromDate: date)
+        let hour = components.hour
+        let minutes = components.minute
+        let month = components.month
+        let year = components.year
+        let day = components.day
         
-        println(x)
-    
+        insertShift("qxVIS4YcNY", date, "morning")
         
     }
 
