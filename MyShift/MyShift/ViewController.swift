@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         }
         else {
         
-            let employeeVC = self.storyboard?.instantiateViewControllerWithIdentifier("sbEmployee") as ViewControllerManager
+            let employeeVC = self.storyboard?.instantiateViewControllerWithIdentifier("sbEmployee") as ViewControllerEmployee
             
             self.presentViewController(employeeVC, animated: true, completion: nil)
         }
