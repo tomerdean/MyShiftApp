@@ -36,4 +36,12 @@ func insertShift(userId: String, shiftDate: NSDate, shiftTime: String) {
     shift.save()
 }
 
+func deleteShift(objectId: String) {
+    var result: [AnyObject]
+    var query = PFQuery(className: "Shifts")
+    query.whereKey("objectId", equalTo: objectId)
+    
+    result = query.findObjects()
+    result[0].delete()
+}
 
