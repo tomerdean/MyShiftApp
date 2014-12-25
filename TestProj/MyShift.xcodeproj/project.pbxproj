@@ -26,14 +26,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CA6B75FF1A4C3B4600138996 /* TestProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6B75FF1A4C3B4600138996 /* MyShift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyShift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA6B76031A4C3B4600138996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA6B76041A4C3B4600138996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA6B76061A4C3B4600138996 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CA6B76091A4C3B4600138996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA6B760B1A4C3B4600138996 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CA6B760E1A4C3B4600138996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		CA6B76141A4C3B4600138996 /* TestProjTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProjTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6B76141A4C3B4600138996 /* MyShiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyShiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA6B76191A4C3B4600138996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA6B761A1A4C3B4600138996 /* TestProjTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProjTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,8 +68,8 @@
 		CA6B76001A4C3B4600138996 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA6B75FF1A4C3B4600138996 /* TestProj.app */,
-				CA6B76141A4C3B4600138996 /* TestProjTests.xctest */,
+				CA6B75FF1A4C3B4600138996 /* MyShift.app */,
+				CA6B76141A4C3B4600138996 /* MyShiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,9 +115,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CA6B75FE1A4C3B4600138996 /* TestProj */ = {
+		CA6B75FE1A4C3B4600138996 /* MyShift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA6B761E1A4C3B4600138996 /* Build configuration list for PBXNativeTarget "TestProj" */;
+			buildConfigurationList = CA6B761E1A4C3B4600138996 /* Build configuration list for PBXNativeTarget "MyShift" */;
 			buildPhases = (
 				CA6B75FB1A4C3B4600138996 /* Sources */,
 				CA6B75FC1A4C3B4600138996 /* Frameworks */,
@@ -127,14 +127,14 @@
 			);
 			dependencies = (
 			);
-			name = TestProj;
+			name = MyShift;
 			productName = TestProj;
-			productReference = CA6B75FF1A4C3B4600138996 /* TestProj.app */;
+			productReference = CA6B75FF1A4C3B4600138996 /* MyShift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CA6B76131A4C3B4600138996 /* TestProjTests */ = {
+		CA6B76131A4C3B4600138996 /* MyShiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA6B76211A4C3B4600138996 /* Build configuration list for PBXNativeTarget "TestProjTests" */;
+			buildConfigurationList = CA6B76211A4C3B4600138996 /* Build configuration list for PBXNativeTarget "MyShiftTests" */;
 			buildPhases = (
 				CA6B76101A4C3B4600138996 /* Sources */,
 				CA6B76111A4C3B4600138996 /* Frameworks */,
@@ -145,9 +145,9 @@
 			dependencies = (
 				CA6B76161A4C3B4600138996 /* PBXTargetDependency */,
 			);
-			name = TestProjTests;
+			name = MyShiftTests;
 			productName = TestProjTests;
-			productReference = CA6B76141A4C3B4600138996 /* TestProjTests.xctest */;
+			productReference = CA6B76141A4C3B4600138996 /* MyShiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -168,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CA6B75FA1A4C3B4600138996 /* Build configuration list for PBXProject "TestProj" */;
+			buildConfigurationList = CA6B75FA1A4C3B4600138996 /* Build configuration list for PBXProject "MyShift" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -181,8 +181,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA6B75FE1A4C3B4600138996 /* TestProj */,
-				CA6B76131A4C3B4600138996 /* TestProjTests */,
+				CA6B75FE1A4C3B4600138996 /* MyShift */,
+				CA6B76131A4C3B4600138996 /* MyShiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -230,7 +230,7 @@
 /* Begin PBXTargetDependency section */
 		CA6B76161A4C3B4600138996 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CA6B75FE1A4C3B4600138996 /* TestProj */;
+			target = CA6B75FE1A4C3B4600138996 /* MyShift */;
 			targetProxy = CA6B76151A4C3B4600138996 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -338,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestProj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MyShift;
 			};
 			name = Debug;
 		};
@@ -348,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestProj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MyShift;
 			};
 			name = Release;
 		};
@@ -366,7 +366,7 @@
 				);
 				INFOPLIST_FILE = TestProjTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MyShiftTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestProj.app/TestProj";
 			};
 			name = Debug;
@@ -381,7 +381,7 @@
 				);
 				INFOPLIST_FILE = TestProjTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MyShiftTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestProj.app/TestProj";
 			};
 			name = Release;
@@ -389,7 +389,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CA6B75FA1A4C3B4600138996 /* Build configuration list for PBXProject "TestProj" */ = {
+		CA6B75FA1A4C3B4600138996 /* Build configuration list for PBXProject "MyShift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA6B761C1A4C3B4600138996 /* Debug */,
@@ -398,7 +398,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA6B761E1A4C3B4600138996 /* Build configuration list for PBXNativeTarget "TestProj" */ = {
+		CA6B761E1A4C3B4600138996 /* Build configuration list for PBXNativeTarget "MyShift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA6B761F1A4C3B4600138996 /* Debug */,
@@ -406,7 +406,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		CA6B76211A4C3B4600138996 /* Build configuration list for PBXNativeTarget "TestProjTests" */ = {
+		CA6B76211A4C3B4600138996 /* Build configuration list for PBXNativeTarget "MyShiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA6B76221A4C3B4600138996 /* Debug */,
