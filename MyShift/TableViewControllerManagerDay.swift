@@ -10,11 +10,11 @@ import UIKit
 
 class TableViewControllerManagerDay: UITableViewController {
 
-    @IBOutlet weak var lbl_Title: UINavigationItem!
+    @IBOutlet weak var nav_title: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        lbl_Title.title = mapNumberToDay(managerDayOfWeek)
+        nav_title.title = mapNumberToDay(managerDayOfWeek)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,13 +27,13 @@ class TableViewControllerManagerDay: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return 2
     }
 
     /*

@@ -77,6 +77,7 @@ func mapNumberToDay(dayNumber: Int) -> String {
         returnDay = ""
     }
     
+    
     return returnDay
 }
 
