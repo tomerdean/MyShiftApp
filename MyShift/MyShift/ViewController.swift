@@ -14,7 +14,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         loadParse()
-        getCurrShifts("bcn69t8zLD")
+        var x = getCurrShifts("bcn69t8zLD")
+        
+        println(x)
     
         
     }
