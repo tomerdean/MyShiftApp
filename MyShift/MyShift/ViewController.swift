@@ -11,8 +11,24 @@ import UIKit
 var managerDayOfWeek = 0
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var usernameField: UITextField!
+    
+    @IBOutlet weak var txtUsername: UITextField!
+    
+    @IBAction func logIn(sender: AnyObject) {
+        if(txtUsername.text == "admin")
+        {
+            let managerVC = self.storyboard?.instantiateViewControllerWithIdentifier("sbManager") as ViewControllerManager
+            
+            self.presentViewController(managerVC, animated: true, completion: nil)
+        }
+        else {
+        
+            let employeeVC = self.storyboard?.instantiateViewControllerWithIdentifier("sbEmployee") as ViewControllerManager
+            
+            self.presentViewController(employeeVC, animated: true, completion: nil)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,7 +47,7 @@ class ViewController: UIViewController {
         
         //insertShift("qxVIS4YcNY", date, "morning")
         //deleteShift("baYS4gZ9Ja")
-        changeShiftStatus("KFED5aZq7d", 1)
+        //changeShiftStatus("KFED5aZq7d", 1)
         
         
     }
