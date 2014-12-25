@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -61,7 +61,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FwF-wC-l12" kind="show" id="Ec3-tj-rBg"/>
+                                    <segue destination="SOe-T3-emq" kind="show" id="UyD-JQ-YHp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,6 +85,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="334" y="-468"/>
+        </scene>
+        <!--View Controller Manager-->
+        <scene sceneID="g4T-ei-Uv5">
+            <objects>
+                <tableViewController id="SOe-T3-emq" customClass="ViewControllerManager" customModule="MyShift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="TB5-TB-ZAW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="msH-wv-ZvH">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="msH-wv-ZvH" id="X4h-I2-R9q">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="SOe-T3-emq" id="MJh-u5-FCt"/>
+                            <outlet property="delegate" destination="SOe-T3-emq" id="dfU-7X-KJ4"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uZ4-0L-hcc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="339" y="354"/>
         </scene>
         <!--View Controller Employee-->
         <scene sceneID="Y8O-Na-r40">
@@ -120,41 +147,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gnn-Y6-ObR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="832" y="-468"/>
-        </scene>
-        <!--View Controller Manager-->
-        <scene sceneID="L99-rm-FXl">
-            <objects>
-                <viewController id="FwF-wC-l12" customClass="ViewControllerManager" customModule="MyShift" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dda-UU-Adh"/>
-                        <viewControllerLayoutGuide type="bottom" id="VH7-Db-6d7"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PW7-hS-pfb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Manager Main page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ax-b2-91d">
-                                <rect key="frame" x="71" y="28" width="216" height="26"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="26" id="8V6-XN-7z1"/>
-                                    <constraint firstAttribute="width" constant="216" id="dYL-2g-0v9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="5ax-b2-91d" firstAttribute="top" secondItem="dda-UU-Adh" secondAttribute="bottom" constant="8" id="LJS-s2-sCH"/>
-                            <constraint firstAttribute="centerX" secondItem="5ax-b2-91d" secondAttribute="centerX" id="tS0-J6-yle"/>
-                        </constraints>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="adZ-s0-VR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1320" y="-468"/>
         </scene>
     </scenes>
 </document>
