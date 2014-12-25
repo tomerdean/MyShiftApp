@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        println("test peleg 1 2 3 4 5peleg aran")
+        println("test peleg 1 2 3 4 5peleg aran omri")
     }
 
     override func didReceiveMemoryWarning() {
