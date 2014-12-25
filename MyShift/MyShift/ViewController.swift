@@ -12,7 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("peleg")
+
+        loadParse()
+        getCurrShifts("bcn69t8zLD")
+    
+        
     }
 
     override func didReceiveMemoryWarning() {
