@@ -97,29 +97,32 @@
                     <view key="view" contentMode="scaleToFill" id="lIX-Ku-AcF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Employee Main page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gV-yv-Q74">
-                                <rect key="frame" x="105" y="28" width="216" height="26"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="216" id="aR8-Ag-ItI"/>
-                                    <constraint firstAttribute="height" constant="26" id="lKp-CW-Ahm"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="7gV-yv-Q74" firstAttribute="top" secondItem="YAT-ba-WeN" secondAttribute="bottom" constant="8" id="EYB-9b-17F"/>
-                            <constraint firstAttribute="centerX" secondItem="7gV-yv-Q74" secondAttribute="centerX" id="lEN-66-ZfE"/>
-                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gnn-Y6-ObR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="832" y="-468"/>
+        </scene>
+        <!--View Controller Test-->
+        <scene sceneID="YKJ-Ye-vBX">
+            <objects>
+                <viewController id="RL0-DK-UyZ" customClass="ViewControllerTest" customModule="MyShift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qcG-Fw-nPA"/>
+                        <viewControllerLayoutGuide type="bottom" id="aJS-dF-R0t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mbn-pw-9nR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TYe-OD-fmY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709" y="377"/>
         </scene>
         <!--View Controller Manager-->
         <scene sceneID="L99-rm-FXl">
