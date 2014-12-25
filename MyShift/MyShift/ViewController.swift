@@ -8,8 +8,9 @@
 
 import UIKit
 
-// global variable.
+// global variables.
 var managerDayOfWeek = 0
+var shiftType = ""
 
 class ViewController: UIViewController {
 

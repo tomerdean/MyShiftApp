@@ -16,6 +16,17 @@ class TableViewControllerManagerDay: UITableViewController {
         nav_title.title = mapNumberToDay(managerDayOfWeek)
 
     }
+    
+    override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath!) -> NSIndexPath {
+
+        if (indexPath.row == 0){
+            shiftType = "morning"
+        }else if (indexPath.row == 1){
+            shiftType = "evening"
+        }
+        
+        return indexPath
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
