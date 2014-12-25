@@ -82,7 +82,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="vXZ-lx-hvc" kind="show" id="nvM-fh-tig"/>
+                                            <segue destination="IIj-2d-fsU" kind="show" id="U1n-28-7hQ"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Y0d-bo-Mk2" style="IBUITableViewCellStyleDefault" id="Tcc-6C-BTp">
@@ -99,7 +99,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="vXZ-lx-hvc" kind="show" id="JwF-Dk-qPb"/>
+                                            <segue destination="IIj-2d-fsU" kind="show" id="vEA-5C-5Vm"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Q0h-eP-ZEO" style="IBUITableViewCellStyleDefault" id="2oY-zE-ZwH">
@@ -116,7 +116,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="vXZ-lx-hvc" kind="show" id="DHG-X5-TQL"/>
+                                            <segue destination="IIj-2d-fsU" kind="show" id="4sy-oC-vbD"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="a2c-Ca-mUb" style="IBUITableViewCellStyleDefault" id="UuL-Cf-XWn">
@@ -133,7 +133,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="vXZ-lx-hvc" kind="show" id="qIG-Tm-iwe"/>
+                                            <segue destination="IIj-2d-fsU" kind="show" id="A7e-K9-kNf"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Fh9-Mj-wFA" style="IBUITableViewCellStyleDefault" id="8vT-2f-BMV">
@@ -150,7 +150,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="vXZ-lx-hvc" kind="show" id="6dj-Yx-n60"/>
+                                            <segue destination="IIj-2d-fsU" kind="show" id="gzN-BX-Rye"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="e7a-Ew-6YJ" style="IBUITableViewCellStyleDefault" id="g6U-xA-jjF">
@@ -167,7 +167,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="vXZ-lx-hvc" kind="show" id="QwW-uR-C6F"/>
+                                            <segue destination="IIj-2d-fsU" kind="show" id="Bov-4k-hCw"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -303,6 +303,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="JwF-Dk-qPb"/>
+        <segue reference="7aK-25-xKR"/>
     </inferredMetricsTieBreakers>
 </document>

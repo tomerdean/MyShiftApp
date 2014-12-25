@@ -14,7 +14,7 @@ class TableViewControllerManagerDay: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        lbl_Title.title = "peleg"
+        lbl_Title.title = mapNumberToDay(managerDayOfWeek)
     }
 
     override func didReceiveMemoryWarning() {

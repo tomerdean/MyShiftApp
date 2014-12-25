@@ -17,7 +17,7 @@ class ViewControllerManager: UITableViewController {
     
     override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath!) -> NSIndexPath {
         
-        managerDayOfWeek = indexPath.row
+        managerDayOfWeek = indexPath.row + 1
         
         return indexPath
     }

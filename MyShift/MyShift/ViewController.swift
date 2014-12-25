@@ -8,6 +8,7 @@
 
 import UIKit
 
+// global variable.
 var managerDayOfWeek = 0
 
 class ViewController: UIViewController {
@@ -16,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        println("manager choose: \(managerDayOfWeek + 1)")
+        //println("manager choose: \(managerDayOfWeek + 1)")
         
         loadParse()
 
