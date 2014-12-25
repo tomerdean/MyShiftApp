@@ -4,6 +4,35 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
+        <!--Table View Controller Manager Day-->
+        <scene sceneID="Eh7-7g-733">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ntM-Pl-mtl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="IIj-2d-fsU" customClass="TableViewControllerManagerDay" customModule="MyShift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="12Y-Hs-a0n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableFooterView" contentMode="scaleToFill" id="r4t-mf-jJG">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="sd" id="4g6-QC-9O1"/>
+                            </items>
+                        </navigationBar>
+                        <connections>
+                            <outlet property="dataSource" destination="IIj-2d-fsU" id="SWV-0j-qbP"/>
+                            <outlet property="delegate" destination="IIj-2d-fsU" id="8P8-vt-17N"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="lbl_Title" destination="4g6-QC-9O1" id="DeM-vs-g6g"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="-729" y="-468"/>
+        </scene>
         <!--View Controller Manager-->
         <scene sceneID="Ku1-os-bAO">
             <objects>
@@ -12,6 +41,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="cw5-6O-PdE">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Choose Day" id="jqn-UW-EcJ"/>
+                            </items>
+                        </navigationBar>
                         <sections>
                             <tableViewSection id="cqb-Cq-2vN">
                                 <cells>
@@ -29,7 +65,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="vXZ-lx-hvc" kind="show" id="AhQ-ed-iCF"/>
+                                            <segue destination="IIj-2d-fsU" kind="show" id="7aK-25-xKR"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="4Gq-N7-To7" style="IBUITableViewCellStyleDefault" id="377-8V-EsY">
@@ -267,6 +303,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="AhQ-ed-iCF"/>
+        <segue reference="JwF-Dk-qPb"/>
     </inferredMetricsTieBreakers>
 </document>

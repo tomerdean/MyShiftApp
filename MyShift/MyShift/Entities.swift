@@ -54,6 +54,32 @@ func changeShiftStatus(shiftId: String, status: Int){
     result[0].save()
 }
 
+func mapNumberToDay(dayNumber: Int) -> String {
+    
+    var returnDay: String
+    
+    switch dayNumber {
+    case 1:
+        returnDay = "Sunday"
+    case 2:
+        returnDay = "Monday"
+    case 3:
+        returnDay = "Tuesday"
+    case 4:
+        returnDay = "Wednesday"
+    case 5:
+        returnDay = "Thursday"
+    case 6:
+        returnDay = "Friday"
+    case 7:
+        returnDay = "Saturday"
+    default:
+        returnDay = ""
+    }
+    
+    return returnDay
+}
+
 
 
 
