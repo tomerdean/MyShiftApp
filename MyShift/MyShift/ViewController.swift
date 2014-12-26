@@ -33,11 +33,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         loadParse()
-        
+        /*
         let date = NSDate()
         var r = getShiftsForManager(date, "morning")
         println(r)
         
+        
+
         
 
         println("manager choose: \(managerDayOfWeek + 1)")
@@ -66,7 +68,7 @@ class ViewController: UIViewController {
         //deleteShift("baYS4gZ9Ja")
         //changeShiftStatus("KFED5aZq7d", 1)
         
-        
+        */
     }
         
     override func didReceiveMemoryWarning() {

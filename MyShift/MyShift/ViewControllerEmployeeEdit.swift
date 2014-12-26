@@ -13,7 +13,7 @@ class ViewControllerEmployeeEdit: UIViewController {
     var origColor = UIColor(red: 0xe0/255, green: 0xf6/255, blue: 0xfe/255, alpha: 1.0)
     var newColor = UIColor(red: 0xcd/255, green: 0xff/255, blue: 0xd1/255, alpha: 1.0)
     
-    var storeClicks = Array<Array<Int>>()
+    var storeClicks = Array<Array<String>>()
     
     
     @IBOutlet weak var sundayMorningButton: UIButton!
@@ -63,36 +63,41 @@ class ViewControllerEmployeeEdit: UIViewController {
         var rows = 10, cols = 10
 
         for col in 0..<10 {
-            storeClicks.append(Array(count: rows, repeatedValue:Int()))
+            storeClicks.append(Array(count: rows, repeatedValue:String()))
         }
     }
     
-    func SaveDate(dayOffset:Int, timeOfDay:Int) {
+    func RemoveItem(keyToRemove:String) {
+        deleteShift(keyToRemove)
+    }
     
+    func SaveDate(dayOffset:Int, timeOfDay:Int) -> AnyObject! {
+    
+        var dayName:String = (timeOfDay == 1) ? "morning" : "evening"
         
         var time:NSDate! = addDaysToDate(NSDate(), 7 + dayOffset - getDayFromDate(NSDate()))
-        println("Sent date: \(time)")
-        insertShift("1", time, String(timeOfDay))
+        var result = insertShift(dayName, time, String(timeOfDay))
+        println("Sent date: \(time) Result=\(result)")
+        return result
     
     }
     
     func changeColor(button:UIButton, x:Int, y:Int) {
-        
-        SaveDate(x, timeOfDay:y)
-        
-//        (String(addDaysToDate(NSDate(), 6 - getDayFromDate(NSDate())))
-        
-        
-        
-        button.backgroundColor = newColor
+    
         
         // item is not clicked
-        if (storeClicks[x][y] != 1) {
-            storeClicks[x][y] = 1
+        if (countElements(storeClicks[x][y]) == 0) {
+            
+            // add item
+            var result = SaveDate(x, timeOfDay:y)
+            storeClicks[x][y] = (result as String)
             button.backgroundColor = newColor
         }
         else {
-            storeClicks[x][y] = 0;
+            
+            // remove item
+            RemoveItem(storeClicks[x][y])
+            storeClicks[x][y] = "";
             button.backgroundColor = origColor
         }
     }
