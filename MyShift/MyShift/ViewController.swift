@@ -32,11 +32,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loadParse()
         
         let date = NSDate()
-        
-        var x = getDayFromDate(date)
-        println(x)
+        var r = getShiftsForManager(date, "morning")
+        println(r)
         
         
 
