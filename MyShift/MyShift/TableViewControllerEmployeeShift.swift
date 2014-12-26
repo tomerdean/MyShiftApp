@@ -10,7 +10,8 @@ import UIKit
 
 class TableViewControllerEmployeeShift: UITableViewController {
     
-    @IBOutlet weak var sundayMorn: UIImageView!
+    
+    @IBOutlet weak var sundayMorning: UIImageView!
     @IBOutlet weak var sundayEvening: UIImageView!
     
     
@@ -95,7 +96,7 @@ class TableViewControllerEmployeeShift: UITableViewController {
                 switch dayNumber {
                     // sunday
                 case 1:
-                    sundayMorn.hidden = false
+                    sundayMorning.hidden = false
                 case 2:
                     mondayMorning.hidden = false
                 case 3:

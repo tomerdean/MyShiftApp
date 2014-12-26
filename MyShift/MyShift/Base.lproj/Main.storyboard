@@ -1030,6 +1030,7 @@
                         <outlet property="satEvening" destination="w0J-Hy-8hS" id="DfT-uu-wqO"/>
                         <outlet property="satMorning" destination="eeO-Md-QMz" id="f4C-9J-huf"/>
                         <outlet property="sundayEvening" destination="10a-bB-gBl" id="yef-Nt-70t"/>
+                        <outlet property="sundayMorning" destination="Ans-au-rO0" id="9UY-My-TSe"/>
                         <outlet property="thursdayEvening" destination="NeA-pW-eQh" id="wqL-zg-qEI"/>
                         <outlet property="thursdayMorning" destination="ka5-iI-7w3" id="EGx-IS-eN3"/>
                         <outlet property="tuesdayEvening" destination="Bm8-jn-RS9" id="yuA-ht-mTH"/>
@@ -1052,9 +1053,9 @@
         <image name="Sun" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jqs-3f-vM7"/>
-        <segue reference="YWs-fQ-NOv"/>
-        <segue reference="D1u-uO-ECY"/>
+        <segue reference="KUs-O8-24s"/>
+        <segue reference="nVf-T2-E5e"/>
         <segue reference="fHQ-8E-HRf"/>
+        <segue reference="jqs-3f-vM7"/>
     </inferredMetricsTieBreakers>
 </document>
