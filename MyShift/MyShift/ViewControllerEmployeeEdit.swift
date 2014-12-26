@@ -10,7 +10,7 @@ import UIKit
 
 class ViewControllerEmployeeEdit: UIViewController {
 
-    var origColor = UIColor(red: 0xaa/255, green: 0xaa/255, blue: 0xaa/255, alpha: 1.0)
+    var origColor = UIColor(red: 0xff/255, green: 0xff/255, blue: 0xff/255, alpha: 1.0)
     var newColor = UIColor(red: 0xcd/255, green: 0xff/255, blue: 0xd1/255, alpha: 1.0)
     
     var storeClicks = Array<Array<String>>()
@@ -74,7 +74,7 @@ class ViewControllerEmployeeEdit: UIViewController {
     func SaveDate(dayOffset:Int, timeOfDay:Int) -> AnyObject! {
     
         var dayName:String = (timeOfDay == 1) ? "morning" : "evening"
-        
+        //userId: String, shiftDate: NSDate, shiftTime: String
         var time:NSDate! = addDaysToDate(NSDate(), 7 + dayOffset - getDayFromDate(NSDate()))
         var result = insertShift(dayName, time, String(timeOfDay))
         println("Sent date: \(time) Result=\(result)")
