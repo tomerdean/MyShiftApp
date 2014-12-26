@@ -25,7 +25,6 @@ class TableViewControllerManagerShift: UITableViewController {
         // get the next sunday date.
         var currDate = NSDate()
         var selectedDay = nextWeekDate(currDate, managerDayOfWeek)
-//        println(selectedDay)
         
         var employees = getUserShiftsForManager(selectedDay, shiftType)
         
@@ -93,8 +92,8 @@ class TableViewControllerManagerShift: UITableViewController {
             changeShiftStatus(currShiftId, 1)
         }
         
-        println(statuses)
-        println()
+
+
     }
     
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
@@ -105,8 +104,7 @@ class TableViewControllerManagerShift: UITableViewController {
             statuses[indexPath.row]["status"] = 1
         }
         
-        println(statuses)
-        println()
+
     }
     
     

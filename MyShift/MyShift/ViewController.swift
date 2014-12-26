@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtUsername: UITextField!
     
     @IBAction func logIn(sender: AnyObject) {
-        if(txtUsername.text == "admin")
+        if(txtUsername.text == "admin" || txtUsername == "ADMIN" || txtUsername == "Admin")
         {
             let managerVC = self.storyboard?.instantiateViewControllerWithIdentifier("sbManager") as ViewControllerManager
             
