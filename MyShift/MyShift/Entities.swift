@@ -54,6 +54,15 @@ func changeShiftStatus(shiftId: String, status: Int){
     result[0].save()
 }
 
+func getDayFromDate(date: NSDate) -> Int {
+    let calendar = NSCalendar.currentCalendar()
+    let components = calendar.components(.CalendarUnitHour | .CalendarUnitMinute | .CalendarUnitMonth | .CalendarUnitYear | .CalendarUnitDay | .CalendarUnitWeekday, fromDate: date)
+    
+    let myWeekday = components.weekday
+    
+    return myWeekday
+}
+
 
 
 
