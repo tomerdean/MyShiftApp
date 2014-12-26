@@ -36,7 +36,8 @@ class ViewController: UIViewController {
         
         loadParse()
         
-        
+        //var x = getUserShiftsForManager(date, "morning")
+        //println(x)
         
         /*
         let date = NSDate()

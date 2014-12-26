@@ -54,7 +54,7 @@ func getUserShiftsForManager(shiftDate: NSDate, shiftTime: String) -> [AnyObject
     var result: [AnyObject]
     var query = PFQuery(className: "Shifts")
     
-    query.whereKey("shift_date", equalTo: shiftDate)
+    query.whereKey("shift_date", equalTo: resetDateTime(shiftDate))
     query.whereKey("shift_time", equalTo: shiftTime)
     
     var query2 = PFQuery(className: "User")
@@ -62,6 +62,17 @@ func getUserShiftsForManager(shiftDate: NSDate, shiftTime: String) -> [AnyObject
 
     result = query2.findObjects()
     
+    return result
+}
+
+func getShift(userId: String, shiftDate: NSDate, shiftTime: String) -> [AnyObject] {
+    var result: [AnyObject]
+    var query = PFQuery(className: "Shifts")
+    query.whereKey("user_id", equalTo: userId)
+    query.whereKey("shift_date", equalTo: resetDateTime(shiftDate))
+    query.whereKey("shift_time", equalTo: shiftTime)
+    
+    result = query.findObjects()
     return result
 }
 
@@ -128,8 +139,8 @@ func addDaysToDate(date: NSDate, add: Int) -> NSDate?  {
     return futureDate
 }
 
-func nextWeekDate(date: NSDate) -> NSDate {
-    return addDaysToDate(date,((7 - getDayFromDate(date) + 1)))!
+func nextWeekDate(date: NSDate, currDay: Int) -> NSDate {
+    return addDaysToDate(date,((7 - getDayFromDate(date) + currDay)))!
 }
 
 
