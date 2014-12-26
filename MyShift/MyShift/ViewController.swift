@@ -12,6 +12,8 @@ import UIKit
 var managerDayOfWeek = 0
 var shiftType = ""
 var user_id = ""
+var managerDays = [1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0]
+
 
 class ViewController: UIViewController {
     
@@ -19,7 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblError: UILabel!
     
     @IBAction func logIn(sender: AnyObject) {
-        if(txtUsername.text == "admin")
+        if(txtUsername.text == "admin" || txtUsername.text == "ADMIN" || txtUsername.text == "Admin")
         {
             let managerVC = self.storyboard?.instantiateViewControllerWithIdentifier("sbManager") as ViewControllerManager
             
@@ -99,5 +101,9 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func backgroundTap(sender: UIControl) {
+        txtUsername.resignFirstResponder()
     }
 }

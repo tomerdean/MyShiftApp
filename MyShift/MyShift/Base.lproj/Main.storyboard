@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller Manager Shift-->
+        <!--Title-->
         <scene sceneID="cAp-W3-CVN">
             <objects>
                 <tableViewController id="QT3-Xw-rLa" customClass="TableViewControllerManagerShift" customModule="MyShift" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,6 +26,11 @@
                             <outlet property="delegate" destination="QT3-Xw-rLa" id="621-bt-rub"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="HbS-jH-Nwv"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Title" id="s5U-IP-IZJ"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s4h-zG-zfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -43,7 +49,13 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
-                                <navigationItem id="Cb1-VG-gS1"/>
+                                <navigationItem title="Select shift time" id="kaQ-S5-qbT">
+                                    <barButtonItem key="leftBarButtonItem" title="Back" id="GHk-l5-qci">
+                                        <connections>
+                                            <segue destination="OGc-WJ-eVk" kind="show" id="H1w-W3-1vz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
                             </items>
                         </navigationBar>
                         <sections>
@@ -93,7 +105,9 @@
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="nav_title" destination="Cb1-VG-gS1" id="6nZ-oX-410"/>
+                        <outlet property="cell_evening" destination="LMG-8l-LZ1" id="lVP-DZ-TLR"/>
+                        <outlet property="cell_morning" destination="LJH-EE-uEF" id="lTW-9U-s3l"/>
+                        <outlet property="nav_title" destination="kaQ-S5-qbT" id="o2l-Rs-SLx"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ajh-bt-6Qt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -112,7 +126,14 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
-                                <navigationItem title="Choose Day" id="jqn-UW-EcJ"/>
+                                <navigationItem title="Choose Day" id="neg-G8-GCg">
+                                    <barButtonItem key="backBarButtonItem" title="xzcxz" id="t3y-kU-f3a"/>
+                                    <barButtonItem key="leftBarButtonItem" title="Back" id="M6L-My-1Nb">
+                                        <connections>
+                                            <segue destination="vXZ-lx-hvc" kind="show" id="KUs-O8-24s"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
                             </items>
                         </navigationBar>
                         <sections>
@@ -259,7 +280,7 @@
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -286,7 +307,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BD2-W5-D7J">
                                 <rect key="frame" x="115" y="247" width="184" height="55"/>
@@ -342,6 +363,9 @@
                             <constraint firstItem="uIV-JD-Six" firstAttribute="top" secondItem="BD2-W5-D7J" secondAttribute="bottom" constant="19" id="lSH-xA-MLa"/>
                             <constraint firstItem="ARK-0F-tJD" firstAttribute="top" secondItem="nkP-8r-awy" secondAttribute="bottom" constant="11" id="vny-aB-TPv"/>
                         </constraints>
+                        <connections>
+                            <action selector="backgroundTap:" destination="vXZ-lx-hvc" eventType="touchDown" id="NB9-N9-xQ1"/>
+                        </connections>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -397,7 +421,7 @@
                                 <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Next Week Shifts" id="n21-TP-w2a">
-                                        <barButtonItem key="leftBarButtonItem" title="Return" id="ISq-tB-9aP">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="ISq-tB-9aP">
                                             <connections>
                                                 <segue destination="qHR-rf-EYj" kind="show" id="GPJ-dA-oK2"/>
                                             </connections>
@@ -735,7 +759,7 @@
                                 <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Employee" id="IXf-Q3-V5k">
-                                        <barButtonItem key="leftBarButtonItem" title="Return" id="baw-LC-dGk">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="baw-LC-dGk">
                                             <connections>
                                                 <segue destination="vXZ-lx-hvc" kind="show" id="YWs-fQ-NOv"/>
                                             </connections>

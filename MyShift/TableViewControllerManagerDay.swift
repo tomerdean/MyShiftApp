@@ -10,11 +10,33 @@ import UIKit
 
 class TableViewControllerManagerDay: UITableViewController {
 
+    @IBOutlet weak var cell_evening: UITableViewCell!
+    @IBOutlet weak var cell_morning: UITableViewCell!
+    
     @IBOutlet weak var nav_title: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         nav_title.title = mapNumberToDay(managerDayOfWeek)
 
+        managerDays[managerDayOfWeek] = 0
+        var count = 0
+        
+        var currDate = NSDate()
+        var selectedDay = nextWeekDate(currDate, managerDayOfWeek)
+        // check if there are shifts on current day at morning.
+        var morningData = getShiftByStatus(1, selectedDay, "morning")
+        var eveningData = getShiftByStatus(1, selectedDay, "evening")
+        
+        if (morningData.count > 0){
+            cell_morning.backgroundColor = UIColor.greenColor()
+            count += 1;
+        }
+        if (eveningData.count > 0){
+            cell_evening.backgroundColor = UIColor.greenColor()
+            count += 1;
+        }
+        managerDays[managerDayOfWeek] = count
+        
     }
     
     override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath!) -> NSIndexPath {

@@ -83,10 +83,25 @@ func getUserShiftsForManager(shiftDate: NSDate, shiftTime: String) -> [AnyObject
     return result
 }
 
+
+
+
 func getShift(userId: String, shiftDate: NSDate, shiftTime: String) -> [AnyObject] {
     var result: [AnyObject]
     var query = PFQuery(className: "Shifts")
     query.whereKey("user_id", equalTo: userId)
+    query.whereKey("shift_date", equalTo: resetDateTime(shiftDate))
+    query.whereKey("shift_time", equalTo: shiftTime)
+    
+    result = query.findObjects()
+    return result
+}
+
+
+func getShiftByStatus(shiftStatus: Int, shiftDate: NSDate, shiftTime: String) -> [AnyObject] {
+    var result: [AnyObject]
+    var query = PFQuery(className: "Shifts")
+    query.whereKey("status", equalTo: shiftStatus)
     query.whereKey("shift_date", equalTo: resetDateTime(shiftDate))
     query.whereKey("shift_time", equalTo: shiftTime)
     
