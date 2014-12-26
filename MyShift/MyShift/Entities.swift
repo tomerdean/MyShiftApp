@@ -26,7 +26,7 @@ func getCurrShifts(userId: String) -> [AnyObject]{
     return result
 }
 
-func insertShift(userId: String, shiftDate: NSDate, shiftTime: String) -> String {
+func insertShift(userId: String, shiftDate: NSDate, shiftTime: String) -> AnyObject {
     var shift = PFObject(className: "Shifts")
     shift.setObject(userId, forKey: "user_id")
     shift.setObject(shiftDate, forKey: "shift_date")
@@ -41,7 +41,7 @@ func getShiftsForManager(shiftDate: NSDate, shiftTime: String) -> [AnyObject] {
     var result: [AnyObject]
     var query = PFQuery(className: "Shifts")
     
-    //query.whereKey("shift_date", equalTo: shiftDate)
+    query.whereKey("shift_date", equalTo: shiftDate)
     query.whereKey("shift_time", equalTo: shiftTime)
     
     var query2 = PFQuery(className: "User")
