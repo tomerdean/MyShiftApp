@@ -9,67 +9,106 @@
 import UIKit
 
 class TableViewControllerEmployeeShift: UITableViewController {
-
-    @IBOutlet weak var cell1: UITableViewCell!
-    @IBOutlet weak var cell2: UITableViewCell!
-    @IBOutlet weak var cell3: UITableViewCell!
-    @IBOutlet weak var cell4: UITableViewCell!
-    @IBOutlet weak var cell7: UITableViewCell!
-    @IBOutlet weak var cell6: UITableViewCell!
-    @IBOutlet weak var cell5: UITableViewCell!
     
+    @IBOutlet weak var sundayMorn: UIImageView!
+    @IBOutlet weak var sundayEvening: UIImageView!
+    
+    
+    @IBOutlet weak var mondayMorning: UIImageView!
+    @IBOutlet weak var mondayEvening: UIImageView!
+    
+    
+    @IBOutlet weak var tuesdayMorning: UIImageView!
+    @IBOutlet weak var tuesdayEvening: UIImageView!
+    
+    
+    @IBOutlet weak var wedMorning: UIImageView!
+    
+    @IBOutlet weak var wedEvening: UIImageView!
+    
+    
+    @IBOutlet weak var thursdayMorning: UIImageView!
+    @IBOutlet weak var thursdayEvening: UIImageView!
+    
+    
+    @IBOutlet weak var fridayMorning: UIImageView!
+    
+    @IBOutlet weak var fridaySaturday: UIImageView!
+    
+    @IBOutlet weak var satMorning: UIImageView!
+    @IBOutlet weak var satEvening: UIImageView!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // hide all
+      /*  sundayMorn.hidden = true
+        sundayEvening.hidden = true
+        mondayMorning.hidden = true
+        mondayEvening.hidden = true
+        tuesdayMorning.hidden = true
+        tuesdayEvening.hidden = true
+        wedMorning.hidden = true
+        wedEvening.hidden = true
+        thursdayMorning.hidden = true
+        thursdayEvening.hidden = true
+        fridayMorning.hidden = true
+        fridaySaturday.hidden = true
+        satMorning.hidden = true
+        satEvening.hidden = true*/
+        
         var result = getCurrShifts(user_id)
         
         for var i = 0; i < result.count; i++ {
             
             var dayNumber = getDayFromDate(result[i]["shift_date"] as NSDate)
             
+            // evening shift
             if(result[i]["shift_time"] as NSString == "evening") {
                 
                 
                 switch dayNumber {
+                // sunday
                 case 1:
-                    cell1.textLabel?.text = "a"
+                    sundayEvening.hidden = false
                 case 2:
-                    cell2.textLabel?.text = "a"
+                    mondayEvening.hidden = false
                 case 3:
-                    cell3.textLabel?.text = "a"
+                    tuesdayEvening.hidden = false
                 case 4:
-                    cell4.textLabel?.text = "a"
+                    wedEvening.hidden = false
                 case 5:
-                    cell5.textLabel?.text = "a"
+                    thursdayEvening.hidden = false
                 case 6:
-                    cell6.textLabel?.text = "a"
+                    fridaySaturday.hidden = false
                 case 7:
-                    cell7.textLabel?.text = "a"
+                    satEvening.hidden = false
                 default:
-                    cell7.textLabel?.text = "a"
+                    satEvening.hidden = false
                 }
             }
             else {
                 
                 switch dayNumber {
+                    // sunday
                 case 1:
-                    cell1.textLabel?.text = "b"
+                    sundayMorn.hidden = false
                 case 2:
-                    cell2.textLabel?.text = "b"
+                    mondayMorning.hidden = false
                 case 3:
-                    cell3.textLabel?.text = "b"
+                    tuesdayMorning.hidden = false
                 case 4:
-                    cell4.textLabel?.text = "b"
+                    wedMorning.hidden = false
                 case 5:
-                    cell5.textLabel?.text = "b"
+                    thursdayMorning.hidden = false
                 case 6:
-                    cell6.textLabel?.text = "b"
+                    fridayMorning.hidden = false
                 case 7:
-                    cell7.textLabel?.text = "b"
+                    satMorning.hidden = false
                 default:
-                    cell7.textLabel?.text = "b"
+                    satEvening.hidden = false
                 }
             }
         }
