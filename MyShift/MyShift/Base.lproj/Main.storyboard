@@ -126,7 +126,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
-                                <navigationItem title="Title" id="neg-G8-GCg">
+                                <navigationItem title="Choose Day" id="neg-G8-GCg">
                                     <barButtonItem key="backBarButtonItem" title="xzcxz" id="t3y-kU-f3a"/>
                                     <barButtonItem key="leftBarButtonItem" title="Back" id="M6L-My-1Nb">
                                         <connections>
