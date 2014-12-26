@@ -4,6 +4,33 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
+        <!--Table View Controller Manager Shift-->
+        <scene sceneID="cAp-W3-CVN">
+            <objects>
+                <tableViewController id="QT3-Xw-rLa" customClass="TableViewControllerManagerShift" customModule="MyShift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="baf-Rz-gFC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KyQ-iJ-6CU">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KyQ-iJ-6CU" id="zoU-iZ-WXG">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QT3-Xw-rLa" id="weM-4n-7Ky"/>
+                            <outlet property="delegate" destination="QT3-Xw-rLa" id="621-bt-rub"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s4h-zG-zfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1173" y="-468"/>
+        </scene>
         <!--Table View Controller Manager Day-->
         <scene sceneID="eb7-VQ-ewb">
             <objects>
@@ -35,6 +62,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="QT3-Xw-rLa" kind="show" id="c2S-AV-EHt"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="CKs-FL-ote" style="IBUITableViewCellStyleDefault" id="LMG-8l-LZ1">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -49,6 +79,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="QT3-Xw-rLa" kind="show" id="fHQ-8E-HRf"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -338,5 +371,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="nVf-T2-E5e"/>
+        <segue reference="fHQ-8E-HRf"/>
     </inferredMetricsTieBreakers>
 </document>

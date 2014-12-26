@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		886AF6C61A4CD6A200961EC9 /* TableViewControllerManagerDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886AF6C51A4CD6A200961EC9 /* TableViewControllerManagerDay.swift */; };
+		886AF6C81A4CD97E00961EC9 /* TableViewControllerManagerShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886AF6C71A4CD97E00961EC9 /* TableViewControllerManagerShift.swift */; };
 		88D62E761A4CAC2900F61035 /* ViewControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D62E751A4CAC2900F61035 /* ViewControllerManager.swift */; };
 		CA5ED0E21A4CA4700040C879 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5ED0E11A4CA4700040C879 /* Entities.swift */; };
 		CA6B76331A4C44DE00138996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6B76321A4C44DE00138996 /* AppDelegate.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		886AF6C51A4CD6A200961EC9 /* TableViewControllerManagerDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewControllerManagerDay.swift; path = ../TableViewControllerManagerDay.swift; sourceTree = "<group>"; };
+		886AF6C71A4CD97E00961EC9 /* TableViewControllerManagerShift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerManagerShift.swift; sourceTree = "<group>"; };
 		88D62E751A4CAC2900F61035 /* ViewControllerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerManager.swift; sourceTree = "<group>"; };
 		CA08EA001A4C83FE00E54DE7 /* ViewControllerEmployee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerEmployee.swift; sourceTree = "<group>"; };
 		CA5ED0E11A4CA4700040C879 /* Entities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				CA08EA001A4C83FE00E54DE7 /* ViewControllerEmployee.swift */,
 				CA5ED0E11A4CA4700040C879 /* Entities.swift */,
 				CA6B76361A4C44DE00138996 /* Main.storyboard */,
+				886AF6C71A4CD97E00961EC9 /* TableViewControllerManagerShift.swift */,
 				CA6B76391A4C44DE00138996 /* Images.xcassets */,
 				CA6B763B1A4C44DE00138996 /* LaunchScreen.xib */,
 				CA6B76301A4C44DE00138996 /* Supporting Files */,
@@ -283,6 +286,7 @@
 			files = (
 				88D62E761A4CAC2900F61035 /* ViewControllerManager.swift in Sources */,
 				CA5ED0E21A4CA4700040C879 /* Entities.swift in Sources */,
+				886AF6C81A4CD97E00961EC9 /* TableViewControllerManagerShift.swift in Sources */,
 				CA6B76351A4C44DE00138996 /* ViewController.swift in Sources */,
 				CA6B76331A4C44DE00138996 /* AppDelegate.swift in Sources */,
 				886AF6C61A4CD6A200961EC9 /* TableViewControllerManagerDay.swift in Sources */,
