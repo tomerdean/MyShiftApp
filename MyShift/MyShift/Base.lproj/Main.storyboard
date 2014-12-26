@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -394,14 +394,14 @@
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="1Wb-kJ-NIM" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="0.0" y="262" width="99" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Wednesday">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="IN0-2b-fm5" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="208" y="262" width="111" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Evening">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -411,7 +411,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="DPp-6h-6Bg" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="208" y="196" width="111" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Evening">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -421,7 +421,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="MAo-LL-n90" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="100" y="262" width="108" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Morning">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -431,14 +431,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="S6H-SN-OVD" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="0.0" y="328" width="99" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Thursday">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="P2Z-hm-FLk" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="208" y="328" width="111" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Evening">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -448,7 +448,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="Yzs-yc-hhW" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="100" y="328" width="108" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Morning">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -458,14 +458,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="9cn-Ha-YkE" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="0.0" y="394" width="99" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Friday">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="lGT-6c-bmc" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="208" y="394" width="111" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Evening">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -475,7 +475,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="J84-sL-03I" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="100" y="394" width="108" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Morning">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -485,14 +485,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="ft4-d4-aHG" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="0.0" y="460" width="99" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Saturday">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="fCM-pp-drV" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="100" y="460" width="108" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Morning">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -502,14 +502,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="QtJ-F6-vrH" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="0.0" y="64" width="99" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Sunday">
                                     <color key="titleColor" red="0.021252252496951916" green="0.17314581959003739" blue="0.22985716540404044" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="eLv-rX-clm" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="208" y="64" width="111" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Evening">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -519,7 +519,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="FD5-5o-bo0" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="100" y="64" width="108" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Morning">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -529,21 +529,21 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="Sgu-7w-JqS" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="0.0" y="130" width="99" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Monday">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="1Xp-ci-sjn" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="0.0" y="196" width="99" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Tuesday">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="szl-F0-df9" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="208" y="460" width="111" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Evening">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -553,7 +553,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="0tX-cA-2Z9" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="100" y="130" width="108" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Morning">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -563,7 +563,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="gs7-46-u52" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="208" y="130" width="111" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Evening">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -573,7 +573,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="QSj-J1-YGX" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="100" y="196" width="108" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Morning">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -582,12 +582,12 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.26666666666666666" green="0.0" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="zVS-Ft-ClW"/>
-                    </toolbarItems>
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="fridayEveningButton" destination="lGT-6c-bmc" id="eUN-RT-D8R"/>
@@ -634,45 +634,67 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXX-em-nx6">
-                                <rect key="frame" x="113" y="195" width="189" height="30"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OnH-CJ-Eaq">
+                                <rect key="frame" x="81" y="108" width="170" height="170"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View timetable" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAy-Pq-0PU">
+                                        <rect key="frame" x="29" y="8" width="112" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wy8-Zw-DTu">
+                                        <rect key="frame" x="25" y="38" width="129" height="131"/>
+                                        <state key="normal" title="Button" image="Calendar">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="09n-Xj-I9F"/>
-                                    <constraint firstAttribute="width" constant="189" id="2HC-82-u5c"/>
+                                    <constraint firstAttribute="width" constant="170" id="7Ha-xa-CCp"/>
+                                    <constraint firstAttribute="height" constant="170" id="T5l-c1-NfX"/>
                                 </constraints>
-                                <state key="normal" title="View weekly timetable">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Xsn-6O-gW0" kind="show" id="6un-0f-Et3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUq-MT-dAj">
-                                <rect key="frame" x="132" y="233" width="151" height="30"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yuj-Yk-w9c">
+                                <rect key="frame" x="81" y="300" width="170" height="170"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send shifts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9C-pO-wt8">
+                                        <rect key="frame" x="29" y="8" width="112" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eI7-vg-DBs">
+                                        <rect key="frame" x="20" y="38" width="130" height="130"/>
+                                        <state key="normal" title="Button" image="CalendarEdit">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="tqX-Vh-sUH" kind="show" id="ppE-qA-mTZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="151" id="ksc-hz-fak"/>
-                                    <constraint firstAttribute="height" constant="30" id="wiJ-fH-eGq"/>
+                                    <constraint firstAttribute="height" constant="170" id="Al7-M5-mVP"/>
+                                    <constraint firstAttribute="width" constant="170" id="YNA-2F-GEx"/>
                                 </constraints>
-                                <state key="normal" title="Send next week shifts">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="tqX-Vh-sUH" kind="show" id="hNa-N1-iK7"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.26666666666666666" green="0.0" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mUq-MT-dAj" firstAttribute="top" secondItem="wXX-em-nx6" secondAttribute="bottom" constant="8" id="9An-rH-zDJ"/>
                             <constraint firstItem="sDr-UB-Xcb" firstAttribute="leading" secondItem="lIX-Ku-AcF" secondAttribute="leading" id="IOx-Tm-DzA"/>
+                            <constraint firstItem="OnH-CJ-Eaq" firstAttribute="top" secondItem="sDr-UB-Xcb" secondAttribute="bottom" constant="44" id="IyP-Dw-rFv"/>
                             <constraint firstItem="sDr-UB-Xcb" firstAttribute="top" secondItem="YAT-ba-WeN" secondAttribute="bottom" id="QWQ-g0-QtP"/>
+                            <constraint firstAttribute="centerX" secondItem="OnH-CJ-Eaq" secondAttribute="centerX" id="X7w-Pc-PmB"/>
                             <constraint firstAttribute="trailing" secondItem="sDr-UB-Xcb" secondAttribute="trailing" id="XdO-Z5-Age"/>
-                            <constraint firstItem="wXX-em-nx6" firstAttribute="top" secondItem="sDr-UB-Xcb" secondAttribute="bottom" constant="131" id="bLG-0a-nJf"/>
-                            <constraint firstAttribute="centerX" secondItem="wXX-em-nx6" secondAttribute="centerX" id="ea0-jr-PMO"/>
-                            <constraint firstItem="wXX-em-nx6" firstAttribute="top" secondItem="sDr-UB-Xcb" secondAttribute="bottom" constant="131" id="sW9-jE-uMK"/>
-                            <constraint firstAttribute="centerX" secondItem="wXX-em-nx6" secondAttribute="centerX" id="wzD-Bv-2GL"/>
+                            <constraint firstItem="yuj-Yk-w9c" firstAttribute="top" secondItem="OnH-CJ-Eaq" secondAttribute="bottom" constant="22" id="Yf4-IR-3VN"/>
+                            <constraint firstAttribute="centerX" secondItem="yuj-Yk-w9c" secondAttribute="centerX" id="q8M-19-XGw"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gnn-Y6-ObR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -809,6 +831,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Calendar" width="240" height="240"/>
+        <image name="CalendarEdit" width="240" height="240"/>
         <image name="DimmedBG" width="582" height="574"/>
         <image name="LoginFont-1" width="363" height="187"/>
     </resources>
