@@ -13,6 +13,7 @@ var managerDayOfWeek = 0
 var shiftType = ""
 var user_id = ""
 
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var txtUsername: UITextField!

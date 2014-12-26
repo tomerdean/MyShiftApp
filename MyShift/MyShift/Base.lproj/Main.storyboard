@@ -94,6 +94,8 @@
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="cell_evening" destination="LMG-8l-LZ1" id="lVP-DZ-TLR"/>
+                        <outlet property="cell_morning" destination="LJH-EE-uEF" id="lTW-9U-s3l"/>
                         <outlet property="nav_title" destination="Cb1-VG-gS1" id="6nZ-oX-410"/>
                     </connections>
                 </tableViewController>
