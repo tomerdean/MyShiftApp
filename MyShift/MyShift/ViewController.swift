@@ -11,6 +11,7 @@ import UIKit
 // global variables.
 var managerDayOfWeek = 0
 var shiftType = ""
+var user_id = ""
 
 class ViewController: UIViewController {
     
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
         }
         else {
         
+            user_id = getUserIdByName(txtUsername.text)
             let employeeVC = self.storyboard?.instantiateViewControllerWithIdentifier("sbEmployee") as ViewControllerEmployee
             
             self.presentViewController(employeeVC, animated: true, completion: nil)
@@ -35,6 +37,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         loadParse()
+        let date = NSDate()
+        var x = getShiftsForManager(date, "morning")
+        println(x)
+        
+        //insertShift("qxVIS4YcNY", date, "morning")
         
         //var x = getUserShiftsForManager(date, "morning")
         //println(x)
