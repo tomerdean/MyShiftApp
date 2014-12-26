@@ -24,10 +24,10 @@ class TableViewControllerManagerDay: UITableViewController {
         var eveningData = getShiftByStatus(1, selectedDay, "evening")
         
         if (morningData.count > 0){
-            cell_morning.contentView.backgroundColor = UIColor.greenColor()
+            cell_morning.backgroundColor = UIColor.greenColor()
         }
         if (eveningData.count > 0){
-            cell_evening.contentView.backgroundColor = UIColor.greenColor()
+            cell_evening.backgroundColor = UIColor.greenColor()
         }
         
     }

@@ -69,17 +69,20 @@ class TableViewControllerManagerShift: UITableViewController {
     
         cell.textLabel?.text = self.items[indexPath.row]
         
-        if (statuses[indexPath.row]["status"] == 1){
-            cell.contentView.backgroundColor = UIColor.greenColor()
-        }
+      /*  if (statuses[indexPath.row]["status"] == 1){
+            cell.backgroundColor = UIColor.greenColor()
+        } */
 
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
-        selectedCell.contentView.backgroundColor = UIColor.greenColor()
+        /*if (statuses[indexPath.row]["status"] == 0){
+            selectedCell.contentView.backgroundColor = UIColor.greenColor()
+        }*/
         
+        selectedCell.contentView.backgroundColor = UIColor.greenColor()
         var currShiftId = statuses[indexPath.row]["shiftId"] as NSString
         
         if (statuses[indexPath.row]["status"] == 1){
@@ -92,7 +95,8 @@ class TableViewControllerManagerShift: UITableViewController {
             changeShiftStatus(currShiftId, 1)
         }
         
-
+        println(statuses)
+        println()
 
     }
     
@@ -104,7 +108,8 @@ class TableViewControllerManagerShift: UITableViewController {
             statuses[indexPath.row]["status"] = 1
         }
         
-
+        println(statuses)
+        println()
     }
     
     
