@@ -13,7 +13,8 @@ class TableViewControllerEmployeeShift: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         var r = getCurrShifts(user_id)
-        println(r)
+        
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

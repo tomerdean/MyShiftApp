@@ -37,14 +37,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         loadParse()
-        let date = NSDate()
-        var x = getShiftsForManager(date, "morning")
-        println(x)
+        
+        //var x = getShiftsForManager(date, "morning")
+        
         
         //insertShift("qxVIS4YcNY", date, "morning")
         
-        //var x = getUserShiftsForManager(date, "morning")
-        //println(x)
+        
         
         /*
         let date = NSDate()
