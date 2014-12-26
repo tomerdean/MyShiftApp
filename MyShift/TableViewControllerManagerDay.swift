@@ -12,6 +12,7 @@ class TableViewControllerManagerDay: UITableViewController {
 
     @IBOutlet weak var cell_evening: UITableViewCell!
     @IBOutlet weak var cell_morning: UITableViewCell!
+    
     @IBOutlet weak var nav_title: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
