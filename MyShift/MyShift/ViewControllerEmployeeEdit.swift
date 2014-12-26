@@ -67,9 +67,23 @@ class ViewControllerEmployeeEdit: UIViewController {
         }
     }
     
+    func SaveDate(dayOffset:Int, timeOfDay:Int) {
+    
+        
+        var time:NSDate! = addDaysToDate(NSDate(), 7 + dayOffset - getDayFromDate(NSDate()))
+        println("Sent date: \(time)")
+        insertShift("1", time, String(timeOfDay))
+    
+    }
+    
     func changeColor(button:UIButton, x:Int, y:Int) {
         
-        println("color is currently \(button.backgroundColor)")
+        SaveDate(x, timeOfDay:y)
+        
+//        (String(addDaysToDate(NSDate(), 6 - getDayFromDate(NSDate())))
+        
+        
+        
         button.backgroundColor = newColor
         
         // item is not clicked
@@ -86,15 +100,18 @@ class ViewControllerEmployeeEdit: UIViewController {
     @IBAction func sundayMorning(sender: UIButton) {
 
         changeColor(sundayMorningButton, x:1, y:1)
+
     }
     
     @IBAction func sundayEvening(sender: UIButton) {
         changeColor(sundayEveningButton, x:1, y:2)
+
     }
 
     
     @IBAction func monMorningClick(sender: UIButton) {
         changeColor(monMorning, x:2, y:1)
+
     }
     
     

@@ -64,6 +64,16 @@ func getDayFromDate(date: NSDate) -> Int {
 }
 
 
+func addDaysToDate(date: NSDate, add: Int) -> NSDate?  {
+    var myObject = NSDate()
+    myObject = date
+    var seconds = NSTimeInterval(add * 24 * 60 * 60)
+    let futureDate = myObject.dateByAddingTimeInterval(seconds)
+    let timeSinceNow = myObject.timeIntervalSinceNow
+    return futureDate
+}
+
+
 
 
 

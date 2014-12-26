@@ -39,11 +39,11 @@ class ViewController: UIViewController {
         println(x)
         
         
-/*
+
         println("manager choose: \(managerDayOfWeek + 1)")
         
         loadParse()
-
+/*
         let date = NSDate()
         let calendar = NSCalendar.currentCalendar()
         let components = calendar.components(.CalendarUnitHour | .CalendarUnitMinute | .CalendarUnitMonth | .CalendarUnitYear | .CalendarUnitDay | .CalendarUnitWeekday, fromDate: date)
