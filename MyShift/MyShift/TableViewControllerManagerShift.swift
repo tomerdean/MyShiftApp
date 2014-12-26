@@ -69,47 +69,52 @@ class TableViewControllerManagerShift: UITableViewController {
     
         cell.textLabel?.text = self.items[indexPath.row]
         
-      /*  if (statuses[indexPath.row]["status"] == 1){
+        if (statuses[indexPath.row]["status"] == 1){
             cell.backgroundColor = UIColor.greenColor()
-        } */
+        }
 
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
-        /*if (statuses[indexPath.row]["status"] == 0){
-            selectedCell.contentView.backgroundColor = UIColor.greenColor()
-        }*/
         
-        selectedCell.contentView.backgroundColor = UIColor.greenColor()
         var currShiftId = statuses[indexPath.row]["shiftId"] as NSString
         
         if (statuses[indexPath.row]["status"] == 1){
             statuses[indexPath.row]["status"] = 0
             //change status in db
             changeShiftStatus(currShiftId, 0)
+            selectedCell.contentView.backgroundColor = UIColor.whiteColor()
         }else{
             statuses[indexPath.row]["status"] = 1
             // change status in db
             changeShiftStatus(currShiftId, 1)
+            selectedCell.contentView.backgroundColor = UIColor.greenColor()
         }
         
-        println(statuses)
-        println()
+//        println(statuses)
+//        println()
 
     }
     
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         
+        var selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
+        var currShiftId = statuses[indexPath.row]["shiftId"] as NSString
+        
         if (statuses[indexPath.row]["status"] == 1){
             statuses[indexPath.row]["status"] = 0
+            changeShiftStatus(currShiftId, 0)
+            selectedCell.backgroundColor = UIColor.whiteColor()
         }else{
             statuses[indexPath.row]["status"] = 1
+            changeShiftStatus(currShiftId, 1)
+            selectedCell.backgroundColor = UIColor.greenColor()
         }
         
-        println(statuses)
-        println()
+//        println(statuses)
+//        println()
     }
     
     
