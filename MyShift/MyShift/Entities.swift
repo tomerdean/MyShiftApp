@@ -128,6 +128,10 @@ func addDaysToDate(date: NSDate, add: Int) -> NSDate?  {
     return futureDate
 }
 
+func nextWeekDate(date: NSDate) -> NSDate {
+    return addDaysToDate(date,((7 - getDayFromDate(date) + 1)))!
+}
+
 
 
 
