@@ -26,6 +26,16 @@ func getCurrShifts(userId: String) -> [AnyObject]{
     return result
 }
 
+func getUserIdByName(name: String) -> String {
+    var result: [AnyObject]
+    var query = PFQuery(className: "User")
+    query.whereKey("name", equalTo: name)
+    
+    result = query.findObjects()
+    
+    return result[0].objectId
+}
+
 func resetDateTime(date: NSDate) -> NSDate {
     
     let dateStyler = NSDateFormatter()
@@ -128,8 +138,21 @@ func addDaysToDate(date: NSDate, add: Int) -> NSDate?  {
     return futureDate
 }
 
+func subDaysToDate(date: NSDate, add: Int) -> NSDate?  {
+    var myObject = NSDate()
+    myObject = date
+    var seconds = NSTimeInterval(-(add * 24 * 60 * 60))
+    let futureDate = myObject.dateByAddingTimeInterval(seconds)
+    let timeSinceNow = myObject.timeIntervalSinceNow
+    return futureDate
+}
+
 func nextWeekDate(date: NSDate) -> NSDate {
     return addDaysToDate(date,((7 - getDayFromDate(date) + 1)))!
+}
+
+func lastWeekDate(date: NSDate) -> NSDate {
+    return subDaysToDate(date,(getDayFromDate(date)))!
 }
 
 
