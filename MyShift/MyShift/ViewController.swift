@@ -35,16 +35,31 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         loadParse()
+        
+        let date = NSDate()
+        var x = resetDateTime(date)
+        
+        insertShift("68", x, "www")
+        
+        
         /*
         let date = NSDate()
-        var r = getShiftsForManager(date, "morning")
-        println(r)
+        var x = resetDateTime(date)
         
+        let calendar = NSCalendar.currentCalendar()
+        let components = calendar.components(.CalendarUnitHour | .CalendarUnitMinute | .CalendarUnitMonth | .CalendarUnitYear | .CalendarUnitDay | .CalendarUnitWeekday, fromDate: date)
         
+        insertShift("6", date, "sss")
 
         
 
         println("manager choose: \(managerDayOfWeek + 1)")
+        
+        //var r = getShiftsForManager(x, "morning")
+        //println(r)
+        
+        
+        
         
         loadParse()
 /*
@@ -58,17 +73,14 @@ class ViewController: UIViewController {
         let day = components.day
         let myWeekday = components.weekday
         
-        //let dateStyler = NSDateFormatter()
-        //dateStyler.dateFormat = "yyyy-MM-dd"
+        let dateStyler = NSDateFormatter()
+        dateStyler.dateFormat = "yyyy-MM-dd"
         
-        //let myDate = dateStyler.dateFromString(components)!
+        let myDate = dateStyler.dateFromString(components)!
         
-        //let myWeekday = NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitWeekday, fromDate: myDate).weekday*/
-    
+        let myWeekday = NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitWeekday, fromDate: myDate).weekday*/
+
         
-        //insertShift("qxVIS4YcNY", date, "morning")
-        //deleteShift("baYS4gZ9Ja")
-        //changeShiftStatus("KFED5aZq7d", 1)
         
         */
     }
@@ -77,7 +89,4 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
-
