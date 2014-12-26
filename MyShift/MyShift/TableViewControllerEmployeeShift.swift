@@ -10,9 +10,69 @@ import UIKit
 
 class TableViewControllerEmployeeShift: UITableViewController {
 
+    @IBOutlet weak var cell1: UITableViewCell!
+    @IBOutlet weak var cell2: UITableViewCell!
+    @IBOutlet weak var cell3: UITableViewCell!
+    @IBOutlet weak var cell4: UITableViewCell!
+    @IBOutlet weak var cell7: UITableViewCell!
+    @IBOutlet weak var cell6: UITableViewCell!
+    @IBOutlet weak var cell5: UITableViewCell!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        var r = getCurrShifts(user_id)
+        var result = getCurrShifts(user_id)
+        
+        for var i = 0; i < result.count; i++ {
+            
+            var dayNumber = getDayFromDate(result[i]["shift_date"] as NSDate)
+            
+            if(result[i]["shift_time"] as NSString == "evening") {
+                
+                
+                switch dayNumber {
+                case 1:
+                    cell1.textLabel?.text = "a"
+                case 2:
+                    cell2.textLabel?.text = "a"
+                case 3:
+                    cell3.textLabel?.text = "a"
+                case 4:
+                    cell4.textLabel?.text = "a"
+                case 5:
+                    cell5.textLabel?.text = "a"
+                case 6:
+                    cell6.textLabel?.text = "a"
+                case 7:
+                    cell7.textLabel?.text = "a"
+                default:
+                    cell7.textLabel?.text = "a"
+                }
+            }
+            else {
+                
+                switch dayNumber {
+                case 1:
+                    cell1.textLabel?.text = "b"
+                case 2:
+                    cell2.textLabel?.text = "b"
+                case 3:
+                    cell3.textLabel?.text = "b"
+                case 4:
+                    cell4.textLabel?.text = "b"
+                case 5:
+                    cell5.textLabel?.text = "b"
+                case 6:
+                    cell6.textLabel?.text = "b"
+                case 7:
+                    cell7.textLabel?.text = "b"
+                default:
+                    cell7.textLabel?.text = "b"
+                }
+            }
+        }
         
         
 
@@ -39,7 +99,7 @@ class TableViewControllerEmployeeShift: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 3
+        return 7
     }
 
     /*

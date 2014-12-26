@@ -36,6 +36,10 @@ func getUserIdByName(name: String) -> String {
     query.whereKey("name", equalTo: name)
     
     result = query.findObjects()
+    if(result.count == 0)
+    {
+        return ""
+    }
     
     return result[0].objectId
 }
