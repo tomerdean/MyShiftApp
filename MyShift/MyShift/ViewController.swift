@@ -43,7 +43,8 @@ class ViewController: UIViewController {
         
         //insertShift("qxVIS4YcNY", date, "morning")
         
-        
+        //var x = getUserShiftsForManager(date, "morning")
+        //println(x)
         
         /*
         let date = NSDate()

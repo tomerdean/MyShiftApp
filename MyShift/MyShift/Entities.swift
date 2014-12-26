@@ -60,11 +60,11 @@ func insertShift(userId: String, shiftDate: NSDate, shiftTime: String) -> AnyObj
     return shift.objectId
 }
 
-func getShiftsForManager(shiftDate: NSDate, shiftTime: String) -> [AnyObject] {
+func getUserShiftsForManager(shiftDate: NSDate, shiftTime: String) -> [AnyObject] {
     var result: [AnyObject]
     var query = PFQuery(className: "Shifts")
     
-    query.whereKey("shift_date", equalTo: shiftDate)
+    query.whereKey("shift_date", equalTo: resetDateTime(shiftDate))
     query.whereKey("shift_time", equalTo: shiftTime)
     
     var query2 = PFQuery(className: "User")
@@ -72,6 +72,17 @@ func getShiftsForManager(shiftDate: NSDate, shiftTime: String) -> [AnyObject] {
 
     result = query2.findObjects()
     
+    return result
+}
+
+func getShift(userId: String, shiftDate: NSDate, shiftTime: String) -> [AnyObject] {
+    var result: [AnyObject]
+    var query = PFQuery(className: "Shifts")
+    query.whereKey("user_id", equalTo: userId)
+    query.whereKey("shift_date", equalTo: resetDateTime(shiftDate))
+    query.whereKey("shift_time", equalTo: shiftTime)
+    
+    result = query.findObjects()
     return result
 }
 

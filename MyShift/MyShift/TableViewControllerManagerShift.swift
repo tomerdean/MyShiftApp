@@ -10,21 +10,38 @@ import UIKit
 
 class TableViewControllerManagerShift: UITableViewController {
 
-    var items: [String] = ["Peleg", "Omri", "Tomer", "Orit"]
+    var items: [String] = ["Peleg"]
     var statuses = [
-        ["objectid": "1989", "status": 0]
+        ["objectid": "1989", "shiftId": 1922, "status": 0]
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        // connect to db and fetch relevant employees.
-        loadParse()
+        // init data-structure.
         statuses.removeAtIndex(0)
+        items.removeAtIndex(0)
         
-        println(shiftType)
+        // get the next sunday date.
+        var currDate = NSDate()
+        var selectedDay = nextWeekDate(currDate, managerDayOfWeek)
+//        println(selectedDay)
+        
+        var employees = getUserShiftsForManager(selectedDay, shiftType)
+        
+        // set user-selection-status to 0.
+        for var i = 0; i < employees.count; i++
+        {
+            var usrStatus = getShift(employees[i].objectId,selectedDay, shiftType)
+            var status = usrStatus[0]["status"] as Int
+            if (status == 0){
+                statuses.append(["objectid": employees[i].objectId, "shiftId": usrStatus[0].objectId, "status": 0])
+            }else{
+                statuses.append(["objectid": employees[i].objectId, "shiftId": usrStatus[0].objectId, "status": 1])
+            }
+            items.append(employees[i]["name"] as NSString)
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,19 +69,28 @@ class TableViewControllerManagerShift: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
     
         cell.textLabel?.text = self.items[indexPath.row]
-        statuses.append(["objectid": "1989", "status": 0])
+        
+        if (statuses[indexPath.row]["status"] == 1){
+            cell.contentView.backgroundColor = UIColor.greenColor()
+        }
 
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
-        selectedCell.contentView.backgroundColor = UIColor.redColor()
+        selectedCell.contentView.backgroundColor = UIColor.greenColor()
+        
+        var currShiftId = statuses[indexPath.row]["shiftId"] as NSString
         
         if (statuses[indexPath.row]["status"] == 1){
             statuses[indexPath.row]["status"] = 0
+            //change status in db
+            changeShiftStatus(currShiftId, 0)
         }else{
             statuses[indexPath.row]["status"] = 1
+            // change status in db
+            changeShiftStatus(currShiftId, 1)
         }
         
         println(statuses)
