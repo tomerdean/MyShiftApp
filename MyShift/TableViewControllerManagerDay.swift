@@ -17,6 +17,9 @@ class TableViewControllerManagerDay: UITableViewController {
         super.viewDidLoad()
         nav_title.title = mapNumberToDay(managerDayOfWeek)
 
+        managerDays[managerDayOfWeek] = 0
+        var count = 0
+        
         var currDate = NSDate()
         var selectedDay = nextWeekDate(currDate, managerDayOfWeek)
         // check if there are shifts on current day at morning.
@@ -25,10 +28,13 @@ class TableViewControllerManagerDay: UITableViewController {
         
         if (morningData.count > 0){
             cell_morning.backgroundColor = UIColor.greenColor()
+            count += 1;
         }
         if (eveningData.count > 0){
             cell_evening.backgroundColor = UIColor.greenColor()
+            count += 1;
         }
+        managerDays[managerDayOfWeek] = count
         
     }
     
