@@ -31,23 +31,36 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        let date = NSDate()
+        
+        var x = getDayFromDate(date)
+        println(x)
+        
+        
+/*
         println("manager choose: \(managerDayOfWeek + 1)")
         
         loadParse()
 
         let date = NSDate()
         let calendar = NSCalendar.currentCalendar()
-        let components = calendar.components(.CalendarUnitHour | .CalendarUnitMinute | .CalendarUnitMonth | .CalendarUnitYear | .CalendarUnitDay, fromDate: date)
+        let components = calendar.components(.CalendarUnitHour | .CalendarUnitMinute | .CalendarUnitMonth | .CalendarUnitYear | .CalendarUnitDay | .CalendarUnitWeekday, fromDate: date)
         let hour = components.hour
         let minutes = components.minute
         let month = components.month
         let year = components.year
         let day = components.day
-        let www = components.weekday
+        let myWeekday = components.weekday
         
-        println("day")
-        println(String(www))
+        //let dateStyler = NSDateFormatter()
+        //dateStyler.dateFormat = "yyyy-MM-dd"
+        
+        //let myDate = dateStyler.dateFromString(components)!
+        
+        //let myWeekday = NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitWeekday, fromDate: myDate).weekday*/
+    
         
         //insertShift("qxVIS4YcNY", date, "morning")
         //deleteShift("baYS4gZ9Ja")
