@@ -66,13 +66,15 @@ class TableViewControllerManagerShift: UITableViewController {
         }else{
             statuses[indexPath.row]["status"] = 1
         }
-        println(statuses)
     }
     
+    
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        var cellToDeSelect:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
-        cellToDeSelect.contentView.backgroundColor = UIColor.redColor()
+        var selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
+        selectedCell.contentView.backgroundColor = UIColor.redColor()
     }
+    
+
     
     
 
