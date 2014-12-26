@@ -10,7 +10,7 @@ import UIKit
 
 class ViewControllerEmployeeEdit: UIViewController {
 
-    var origColor = UIColor(red: 0xe0/255, green: 0xf6/255, blue: 0xfe/255, alpha: 1.0)
+    var origColor = UIColor(red: 0xaa/255, green: 0xaa/255, blue: 0xaa/255, alpha: 1.0)
     var newColor = UIColor(red: 0xcd/255, green: 0xff/255, blue: 0xd1/255, alpha: 1.0)
     
     var storeClicks = Array<Array<String>>()
