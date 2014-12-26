@@ -33,15 +33,16 @@ func resetDateTime(date: NSDate) -> NSDate {
     
     let strDate = dateStyler.stringFromDate(date)
     let resetDate = dateStyler.dateFromString(strDate)
+    let newDate = addDaysToDate(resetDate!, 1)
     
-    return resetDate!
+    return newDate!
 }
 
 func insertShift(userId: String, shiftDate: NSDate, shiftTime: String) -> AnyObject {
 
     var shift = PFObject(className: "Shifts")
     shift.setObject(userId, forKey: "user_id")
-    shift.setObject(shiftDate, forKey: "shift_date")
+    shift.setObject(resetDateTime(shiftDate), forKey: "shift_date")
     shift.setObject(shiftTime, forKey: "shift_time")
     shift.setObject(0, forKey: "status")
 

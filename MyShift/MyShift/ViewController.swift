@@ -35,6 +35,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         loadParse()
+        
+        let date = NSDate()
+        var x = resetDateTime(date)
+        
+        insertShift("68", x, "www")
+        
+        
         /*
         let date = NSDate()
         var x = resetDateTime(date)
@@ -44,14 +51,16 @@ class ViewController: UIViewController {
         
         insertShift("6", date, "sss")
 
-        //insertShift("5", date, "morning")
+        
+
+        println("manager choose: \(managerDayOfWeek + 1)")
         
         //var r = getShiftsForManager(x, "morning")
         //println(r)
         
         
         
-        /*
+        
         loadParse()
 /*
         let date = NSDate()
@@ -72,6 +81,7 @@ class ViewController: UIViewController {
         let myWeekday = NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitWeekday, fromDate: myDate).weekday*/
 
         
+        
         */
     }
         
@@ -79,7 +89,4 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
-
