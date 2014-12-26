@@ -152,7 +152,6 @@
 				CF36B2441A4CD35B00676413 /* ViewControllerEmployee.swift */,
 				88D62E751A4CAC2900F61035 /* ViewControllerManager.swift */,
 				886AF6C51A4CD6A200961EC9 /* TableViewControllerManagerDay.swift */,
-				CA08EA001A4C83FE00E54DE7 /* ViewControllerEmployee.swift */,
 				CA5ED0E11A4CA4700040C879 /* Entities.swift */,
 				CA5ED0E51A4CB8B40040C879 /* ViewControllerEmployeeEdit.swift */,
 				CA6B76361A4C44DE00138996 /* Main.storyboard */,
@@ -425,6 +424,7 @@
 					"$(PROJECT_DIR)/MyShift",
 				);
 				INFOPLIST_FILE = MyShift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyShift-Bridging-Header.h";
@@ -442,6 +442,7 @@
 					"$(PROJECT_DIR)/MyShift",
 				);
 				INFOPLIST_FILE = MyShift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyShift-Bridging-Header.h";
