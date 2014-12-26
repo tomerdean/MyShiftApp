@@ -77,10 +77,17 @@ func mapNumberToDay(dayNumber: Int) -> String {
         returnDay = ""
     }
     
-    
     return returnDay
 }
 
+func getDayFromDate(date: NSDate) -> Int {
+    let calendar = NSCalendar.currentCalendar()
+    let components = calendar.components(.CalendarUnitHour | .CalendarUnitMinute | .CalendarUnitMonth | .CalendarUnitYear | .CalendarUnitDay | .CalendarUnitWeekday, fromDate: date)
+    
+    let myWeekday = components.weekday
+    
+    return myWeekday
+}
 
 
 

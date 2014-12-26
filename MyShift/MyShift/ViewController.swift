@@ -33,8 +33,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //println("manager choose: \(managerDayOfWeek + 1)")
+        
+        
+        let date = NSDate()
+        
+        var x = getDayFromDate(date)
+        println(x)
+        
+        
+/*
+        println("manager choose: \(managerDayOfWeek + 1)")
         
         loadParse()
 

@@ -291,9 +291,11 @@
 			files = (
 				88D62E761A4CAC2900F61035 /* ViewControllerManager.swift in Sources */,
 				CA5ED0E21A4CA4700040C879 /* Entities.swift in Sources */,
+				CF36B2451A4CD35B00676413 /* ViewControllerEmployee.swift in Sources */,
 				886AF6C81A4CD97E00961EC9 /* TableViewControllerManagerShift.swift in Sources */,
 				CA6B76351A4C44DE00138996 /* ViewController.swift in Sources */,
 				CA6B76331A4C44DE00138996 /* AppDelegate.swift in Sources */,
+				CA5ED0E61A4CB8B40040C879 /* ViewControllerEmployeeEdit.swift in Sources */,
 				886AF6C61A4CD6A200961EC9 /* TableViewControllerManagerDay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
