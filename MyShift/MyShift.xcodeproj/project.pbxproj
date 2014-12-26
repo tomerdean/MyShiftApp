@@ -11,6 +11,7 @@
 		886AF6C81A4CD97E00961EC9 /* TableViewControllerManagerShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886AF6C71A4CD97E00961EC9 /* TableViewControllerManagerShift.swift */; };
 		88D62E761A4CAC2900F61035 /* ViewControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D62E751A4CAC2900F61035 /* ViewControllerManager.swift */; };
 		CA5ED0E21A4CA4700040C879 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5ED0E11A4CA4700040C879 /* Entities.swift */; };
+		CA5ED0E61A4CB8B40040C879 /* ViewControllerEmployeeEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5ED0E51A4CB8B40040C879 /* ViewControllerEmployeeEdit.swift */; };
 		CA6B76331A4C44DE00138996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6B76321A4C44DE00138996 /* AppDelegate.swift */; };
 		CA6B76351A4C44DE00138996 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6B76341A4C44DE00138996 /* ViewController.swift */; };
 		CA6B76381A4C44DE00138996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA6B76361A4C44DE00138996 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		CF36B2031A4C5B7400676413 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF36B2021A4C5B7400676413 /* libz.dylib */; };
 		CF36B2051A4C5B8100676413 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF36B2041A4C5B8100676413 /* libsqlite3.0.dylib */; };
 		CF36B2071A4C5B8800676413 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF36B2061A4C5B8800676413 /* libsqlite3.dylib */; };
+		CF36B2451A4CD35B00676413 /* ViewControllerEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF36B2441A4CD35B00676413 /* ViewControllerEmployee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +49,8 @@
 		886AF6C51A4CD6A200961EC9 /* TableViewControllerManagerDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewControllerManagerDay.swift; path = ../TableViewControllerManagerDay.swift; sourceTree = "<group>"; };
 		886AF6C71A4CD97E00961EC9 /* TableViewControllerManagerShift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerManagerShift.swift; sourceTree = "<group>"; };
 		88D62E751A4CAC2900F61035 /* ViewControllerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerManager.swift; sourceTree = "<group>"; };
-		CA08EA001A4C83FE00E54DE7 /* ViewControllerEmployee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerEmployee.swift; sourceTree = "<group>"; };
 		CA5ED0E11A4CA4700040C879 /* Entities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
+		CA5ED0E51A4CB8B40040C879 /* ViewControllerEmployeeEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerEmployeeEdit.swift; sourceTree = "<group>"; };
 		CA6B762D1A4C44DE00138996 /* MyShift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyShift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA6B76311A4C44DE00138996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA6B76321A4C44DE00138996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 		CF36B2021A4C5B7400676413 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		CF36B2041A4C5B8100676413 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		CF36B2061A4C5B8800676413 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CF36B2441A4CD35B00676413 /* ViewControllerEmployee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerEmployee.swift; path = ../ViewControllerEmployee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,10 +149,12 @@
 				CF36B1EC1A4C5AAD00676413 /* Parse.framework */,
 				CA6B76321A4C44DE00138996 /* AppDelegate.swift */,
 				CA6B76341A4C44DE00138996 /* ViewController.swift */,
+				CF36B2441A4CD35B00676413 /* ViewControllerEmployee.swift */,
 				88D62E751A4CAC2900F61035 /* ViewControllerManager.swift */,
 				886AF6C51A4CD6A200961EC9 /* TableViewControllerManagerDay.swift */,
 				CA08EA001A4C83FE00E54DE7 /* ViewControllerEmployee.swift */,
 				CA5ED0E11A4CA4700040C879 /* Entities.swift */,
+				CA5ED0E51A4CB8B40040C879 /* ViewControllerEmployeeEdit.swift */,
 				CA6B76361A4C44DE00138996 /* Main.storyboard */,
 				886AF6C71A4CD97E00961EC9 /* TableViewControllerManagerShift.swift */,
 				CA6B76391A4C44DE00138996 /* Images.xcassets */,

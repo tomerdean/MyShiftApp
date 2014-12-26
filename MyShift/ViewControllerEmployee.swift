@@ -2,7 +2,7 @@
 //  ViewControllerEmployee.swift
 //  MyShift
 //
-//  Created by Tom Dean on 12/25/14.
+//  Created by omri on 12/26/14.
 //  Copyright (c) 2014 TeamTop. All rights reserved.
 //
 
@@ -12,13 +12,6 @@ class ViewControllerEmployee: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-      
-    
-    
-        
-        
-        
 
         // Do any additional setup after loading the view.
     }
