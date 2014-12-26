@@ -16,9 +16,13 @@ func loadParse(){
 
 func getCurrShifts(userId: String) -> [AnyObject]{
     
+    let date = NSDate()
+    var startWeek = lastWeekDate(date)
+    
     var result: [AnyObject]
     var query = PFQuery(className: "Shifts")
     query.whereKey("user_id", equalTo: userId)
+    query.whereKey("shift_date", greaterThan: startWeek)
     query.whereKey("status", equalTo: 1)
     
     result = query.findObjects()
@@ -158,8 +162,8 @@ func subDaysToDate(date: NSDate, add: Int) -> NSDate?  {
     return futureDate
 }
 
-func nextWeekDate(date: NSDate) -> NSDate {
-    return addDaysToDate(date,((7 - getDayFromDate(date) + 1)))!
+func nextWeekDate(date: NSDate, currDay: Int) -> NSDate {
+    return addDaysToDate(date,((7 - getDayFromDate(date) + currDay)))!
 }
 
 func lastWeekDate(date: NSDate) -> NSDate {
