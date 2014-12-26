@@ -354,48 +354,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="BcV-hc-nIs" colorLabel="IBBuiltInLabel-Orange">
-                                <rect key="frame" x="0.0" y="130" width="99" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Monday">
-                                    <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="akw-Ge-Uk7" colorLabel="IBBuiltInLabel-Orange">
-                                <rect key="frame" x="208" y="130" width="111" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Evening">
-                                    <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="vaX-MW-RYX" colorLabel="IBBuiltInLabel-Orange">
-                                <rect key="frame" x="100" y="130" width="108" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Morning">
-                                    <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="Fg7-HV-7Sn" colorLabel="IBBuiltInLabel-Orange">
-                                <rect key="frame" x="0.0" y="196" width="99" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Tuesday">
-                                    <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="t9m-Je-vSu" colorLabel="IBBuiltInLabel-Orange">
-                                <rect key="frame" x="208" y="196" width="111" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Evening">
-                                    <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="6Gq-VK-GkW" colorLabel="IBBuiltInLabel-Orange">
-                                <rect key="frame" x="100" y="196" width="108" height="66"/>
-                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Morning">
-                                    <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="1Wb-kJ-NIM" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="0.0" y="262" width="99" height="66"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="calibratedRGB"/>
@@ -409,6 +367,19 @@
                                 <state key="normal" title="Evening">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="wedEvening:" destination="tqX-Vh-sUH" eventType="touchUpInside" id="cWC-Yu-yxL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="DPp-6h-6Bg" colorLabel="IBBuiltInLabel-Orange">
+                                <rect key="frame" x="208" y="196" width="111" height="66"/>
+                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Evening">
+                                    <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tueEvenClick:" destination="tqX-Vh-sUH" eventType="touchUpInside" id="t8e-NV-vhp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="MAo-LL-n90" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="100" y="262" width="108" height="66"/>
@@ -416,6 +387,9 @@
                                 <state key="normal" title="Morning">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="wedMorning:" destination="tqX-Vh-sUH" eventType="touchUpInside" id="h8e-Qe-LDy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="S6H-SN-OVD" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="0.0" y="328" width="99" height="66"/>
@@ -430,6 +404,9 @@
                                 <state key="normal" title="Evening">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="thurEvening:" destination="tqX-Vh-sUH" eventType="touchUpInside" id="ZQg-5d-zZ0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="Yzs-yc-hhW" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="100" y="328" width="108" height="66"/>
@@ -437,6 +414,9 @@
                                 <state key="normal" title="Morning">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="thurMorning:" destination="tqX-Vh-sUH" eventType="touchUpInside" id="3bw-DE-cSJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="9cn-Ha-YkE" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="0.0" y="394" width="99" height="66"/>
@@ -451,6 +431,9 @@
                                 <state key="normal" title="Evening">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="fridayEvening:" destination="tqX-Vh-sUH" eventType="touchUpInside" id="zBN-gj-sQs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="J84-sL-03I" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="100" y="394" width="108" height="66"/>
@@ -458,6 +441,9 @@
                                 <state key="normal" title="Morning">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="fridayMorning:" destination="tqX-Vh-sUH" eventType="touchUpInside" id="zaB-Pc-vhx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="ft4-d4-aHG" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="0.0" y="460" width="99" height="66"/>
@@ -472,6 +458,9 @@
                                 <state key="normal" title="Morning">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="satMorning:" destination="tqX-Vh-sUH" eventType="touchUpInside" id="ePY-dA-cZc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="QtJ-F6-vrH" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="0.0" y="64" width="99" height="66"/>
@@ -487,7 +476,7 @@
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="sundayEvening:" destination="tqX-Vh-sUH" eventType="touchUpInside" id="5QO-QV-SbX"/>
+                                    <action selector="sundayEvening:" destination="tqX-Vh-sUH" eventType="touchUpInside" id="jd9-gp-MIq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="FD5-5o-bo0" colorLabel="IBBuiltInLabel-Orange">
@@ -500,12 +489,59 @@
                                     <action selector="sundayMorning:" destination="tqX-Vh-sUH" eventType="touchUpInside" id="ZJn-jV-AUc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="Sgu-7w-JqS" colorLabel="IBBuiltInLabel-Orange">
+                                <rect key="frame" x="0.0" y="130" width="99" height="66"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Monday">
+                                    <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="1Xp-ci-sjn" colorLabel="IBBuiltInLabel-Orange">
+                                <rect key="frame" x="0.0" y="196" width="99" height="66"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Tuesday">
+                                    <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="szl-F0-df9" colorLabel="IBBuiltInLabel-Orange">
                                 <rect key="frame" x="208" y="460" width="111" height="66"/>
                                 <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Evening">
                                     <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="satEvening:" destination="tqX-Vh-sUH" eventType="touchUpInside" id="TKG-dh-fTT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="0tX-cA-2Z9" colorLabel="IBBuiltInLabel-Orange">
+                                <rect key="frame" x="100" y="130" width="108" height="66"/>
+                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Morning">
+                                    <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="monMorningClick:" destination="tqX-Vh-sUH" eventType="touchUpInside" id="RO8-6L-nru"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="gs7-46-u52" colorLabel="IBBuiltInLabel-Orange">
+                                <rect key="frame" x="208" y="130" width="111" height="66"/>
+                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Evening">
+                                    <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="monEveningClick:" destination="tqX-Vh-sUH" eventType="touchUpInside" id="0sG-j3-drp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="QSj-J1-YGX" colorLabel="IBBuiltInLabel-Orange">
+                                <rect key="frame" x="100" y="196" width="108" height="66"/>
+                                <color key="backgroundColor" red="0.0" green="0.73929383559999995" blue="0.97748974119999998" alpha="0.12" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Morning">
+                                    <color key="titleColor" red="0.021252252499999999" green="0.1731458196" blue="0.22985716540000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tueMornClick:" destination="tqX-Vh-sUH" eventType="touchUpInside" id="B6O-Qh-E0u"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -516,13 +552,20 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="mondayEveningButton" destination="akw-Ge-Uk7" id="9bT-sZ-8i6"/>
-                        <outlet property="mondayMorningButton" destination="vaX-MW-RYX" id="AAr-ey-3lM"/>
+                        <outlet property="fridayEveningButton" destination="lGT-6c-bmc" id="eUN-RT-D8R"/>
+                        <outlet property="fridayMorningButton" destination="J84-sL-03I" id="z3O-aW-Y55"/>
+                        <outlet property="monEveningButton" destination="gs7-46-u52" id="HfY-CT-wMm"/>
+                        <outlet property="monMorning" destination="0tX-cA-2Z9" id="7CG-Og-7bk"/>
+                        <outlet property="satEveningButton" destination="szl-F0-df9" id="JcH-1v-RhS"/>
+                        <outlet property="satMorningButton" destination="fCM-pp-drV" id="H8Z-1Q-PuC"/>
                         <outlet property="sundayEveningButton" destination="eLv-rX-clm" id="FfK-LC-yz9"/>
                         <outlet property="sundayMorningButton" destination="FD5-5o-bo0" id="dfq-ui-1Mh"/>
-                        <outlet property="tt" destination="t9m-Je-vSu" id="6ef-fh-1ga"/>
-                        <outlet property="tuesdayEveningButton" destination="t9m-Je-vSu" id="HL1-bG-6ns"/>
-                        <outlet property="tuesdayMorningButton" destination="6Gq-VK-GkW" id="EyY-OW-hzx"/>
+                        <outlet property="thursdayEveningButton" destination="P2Z-hm-FLk" id="aYW-IC-cLg"/>
+                        <outlet property="thursdayMorningButton" destination="Yzs-yc-hhW" id="A7z-hK-YeF"/>
+                        <outlet property="tueEveningButton" destination="DPp-6h-6Bg" id="rVx-MA-Yp6"/>
+                        <outlet property="tueMorningButton" destination="QSj-J1-YGX" id="cIy-vw-CqE"/>
+                        <outlet property="webEveningButton" destination="IN0-2b-fm5" id="dgH-hK-Mkr"/>
+                        <outlet property="wedMorningbutton" destination="MAo-LL-n90" id="ARw-tU-58a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qCz-Bk-r64" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -557,7 +600,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUq-MT-dAj">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUq-MT-dAj">
                                 <rect key="frame" x="132" y="233" width="151" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="151" id="ksc-hz-fak"/>
@@ -567,13 +610,12 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tqX-Vh-sUH" kind="show" id="8vv-11-uFM"/>
+                                    <segue destination="tqX-Vh-sUH" kind="show" id="hNa-N1-iK7"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="mUq-MT-dAj" secondAttribute="centerX" id="7Zt-oT-8pA"/>
                             <constraint firstItem="mUq-MT-dAj" firstAttribute="top" secondItem="wXX-em-nx6" secondAttribute="bottom" constant="8" id="9An-rH-zDJ"/>
                             <constraint firstItem="sDr-UB-Xcb" firstAttribute="leading" secondItem="lIX-Ku-AcF" secondAttribute="leading" id="IOx-Tm-DzA"/>
                             <constraint firstItem="sDr-UB-Xcb" firstAttribute="top" secondItem="YAT-ba-WeN" secondAttribute="bottom" id="QWQ-g0-QtP"/>

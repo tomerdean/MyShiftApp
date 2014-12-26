@@ -34,18 +34,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        loadParse()
+        /*
         let date = NSDate()
+        var r = getShiftsForManager(date, "morning")
+        println(r)
         
-        var x = getDayFromDate(date)
-        println(x)
         
+
         
-/*
+
         println("manager choose: \(managerDayOfWeek + 1)")
         
         loadParse()
-
+/*
         let date = NSDate()
         let calendar = NSCalendar.currentCalendar()
         let components = calendar.components(.CalendarUnitHour | .CalendarUnitMinute | .CalendarUnitMonth | .CalendarUnitYear | .CalendarUnitDay | .CalendarUnitWeekday, fromDate: date)
@@ -68,7 +70,7 @@ class ViewController: UIViewController {
         //deleteShift("baYS4gZ9Ja")
         //changeShiftStatus("KFED5aZq7d", 1)
         
-        
+        */
     }
         
     override func didReceiveMemoryWarning() {
