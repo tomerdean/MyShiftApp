@@ -65,6 +65,7 @@ class TableViewControllerEmployeeShift: UITableViewController {
             
             var dayNumber = getDayFromDate(result[i]["shift_date"] as NSDate)
             
+            dayNumber = dayNumber - 1
             // evening shift
             if(result[i]["shift_time"] as NSString == "evening") {
                 
