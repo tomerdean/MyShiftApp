@@ -10,11 +10,20 @@ import UIKit
 
 class TableViewControllerManagerShift: UITableViewController {
 
-    var items: [String] = ["Peleg", "Omri", "Tomer"]
+    var items: [String] = ["Peleg", "Omri", "Tomer", "Orit"]
+    var statuses = [
+        ["objectid": "1989", "status": 0]
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        
+        // connect to db and fetch relevant employees.
+        loadParse()
+        statuses.removeAtIndex(0)
+        
         println(shiftType)
     }
 
@@ -34,17 +43,41 @@ class TableViewControllerManagerShift: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return items.count
+        return items.count;
     }
     
  
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
-
+    
         cell.textLabel?.text = self.items[indexPath.row]
+        statuses.append(["objectid": "1989", "status": 0])
 
         return cell
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
+        selectedCell.contentView.backgroundColor = UIColor.redColor()
+        
+        if (statuses[indexPath.row]["status"] == 1){
+            statuses[indexPath.row]["status"] = 0
+        }else{
+            statuses[indexPath.row]["status"] = 1
+        }
+        println(statuses)
+    }
+    
+    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        var cellToDeSelect:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
+        cellToDeSelect.contentView.backgroundColor = UIColor.redColor()
+    }
+    
+    
+
+    
+    
 
 
     /*
