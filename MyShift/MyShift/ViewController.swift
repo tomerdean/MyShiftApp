@@ -8,7 +8,9 @@
 
 import UIKit
 
+// global variables.
 var managerDayOfWeek = 0
+var shiftType = ""
 
 class ViewController: UIViewController {
     
@@ -33,7 +35,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         loadParse()
-        
+        /*
         let date = NSDate()
         var x = resetDateTime(date)
         
@@ -51,7 +53,7 @@ class ViewController: UIViewController {
         
         /*
         loadParse()
-
+/*
         let date = NSDate()
         let calendar = NSCalendar.currentCalendar()
         let components = calendar.components(.CalendarUnitHour | .CalendarUnitMinute | .CalendarUnitMonth | .CalendarUnitYear | .CalendarUnitDay | .CalendarUnitWeekday, fromDate: date)
@@ -70,7 +72,7 @@ class ViewController: UIViewController {
         let myWeekday = NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitWeekday, fromDate: myDate).weekday*/
 
         
-        
+        */
     }
         
     override func didReceiveMemoryWarning() {

@@ -1,23 +1,29 @@
 //
-//  ViewControllerManager.swift
+//  TableViewControllerManagerDay.swift
 //  MyShift
 //
-//  Created by Peleg Aran on 12/25/14.
+//  Created by Peleg Aran on 12/26/14.
 //  Copyright (c) 2014 TeamTop. All rights reserved.
 //
 
 import UIKit
 
-class ViewControllerManager: UITableViewController {
+class TableViewControllerManagerDay: UITableViewController {
 
+    @IBOutlet weak var nav_title: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
+        nav_title.title = mapNumberToDay(managerDayOfWeek)
 
     }
     
     override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath!) -> NSIndexPath {
-        
-        managerDayOfWeek = indexPath.row + 1
+
+        if (indexPath.row == 0){
+            shiftType = "morning"
+        }else if (indexPath.row == 1){
+            shiftType = "evening"
+        }
         
         return indexPath
     }
@@ -38,7 +44,7 @@ class ViewControllerManager: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 7
+        return 2
     }
 
     /*

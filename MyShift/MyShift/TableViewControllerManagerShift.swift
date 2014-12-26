@@ -1,25 +1,30 @@
 //
-//  ViewControllerManager.swift
+//  TableViewControllerManagerShift.swift
 //  MyShift
 //
-//  Created by Peleg Aran on 12/25/14.
+//  Created by Peleg Aran on 12/26/14.
 //  Copyright (c) 2014 TeamTop. All rights reserved.
 //
 
 import UIKit
 
-class ViewControllerManager: UITableViewController {
+class TableViewControllerManagerShift: UITableViewController {
 
+    var items: [String] = ["Peleg", "Omri", "Tomer", "Orit"]
+    var statuses = [
+        ["objectid": "1989", "status": 0]
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    }
-    
-    override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath!) -> NSIndexPath {
         
-        managerDayOfWeek = indexPath.row + 1
         
-        return indexPath
+        
+        // connect to db and fetch relevant employees.
+        loadParse()
+        statuses.removeAtIndex(0)
+        
+        println(shiftType)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,18 +43,44 @@ class ViewControllerManager: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 7
+        return items.count;
     }
-
-    /*
+    
+ 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
-
-        // Configure the cell...
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+    
+        cell.textLabel?.text = self.items[indexPath.row]
+        statuses.append(["objectid": "1989", "status": 0])
 
         return cell
     }
-    */
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
+        selectedCell.contentView.backgroundColor = UIColor.redColor()
+        
+        if (statuses[indexPath.row]["status"] == 1){
+            statuses[indexPath.row]["status"] = 0
+        }else{
+            statuses[indexPath.row]["status"] = 1
+        }
+    }
+    
+    
+    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        var selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
+        selectedCell.contentView.backgroundColor = UIColor.redColor()
+    }
+    
+
+    
+    
+
+    
+    
+
 
     /*
     // Override to support conditional editing of the table view.
