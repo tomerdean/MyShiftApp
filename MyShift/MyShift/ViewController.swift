@@ -16,6 +16,7 @@ var user_id = ""
 class ViewController: UIViewController {
     
     @IBOutlet weak var txtUsername: UITextField!
+    @IBOutlet weak var lblError: UILabel!
     
     @IBAction func logIn(sender: AnyObject) {
         if(txtUsername.text == "admin")
@@ -26,10 +27,17 @@ class ViewController: UIViewController {
         }
         else {
         
-            user_id = getUserIdByName(txtUsername.text)
-            let employeeVC = self.storyboard?.instantiateViewControllerWithIdentifier("sbEmployee") as ViewControllerEmployee
             
-            self.presentViewController(employeeVC, animated: true, completion: nil)
+            user_id = getUserIdByName(txtUsername.text)
+            if(user_id != "") {
+                let employeeVC = self.storyboard?.instantiateViewControllerWithIdentifier("sbEmployee") as ViewControllerEmployee
+                
+                self.presentViewController(employeeVC, animated: true, completion: nil)
+            }
+            else {
+                lblError.text = "User not Found!"
+            }
+            
         }
     }
     

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -318,6 +318,16 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DimmedBG" translatesAutoresizingMaskIntoConstraints="NO" id="HQg-eH-KtM">
                                 <rect key="frame" x="52" y="328" width="249" height="243"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIV-JD-Six">
+                                <rect key="frame" x="126" y="321" width="163" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="BSf-qc-wNL"/>
+                                    <constraint firstAttribute="height" constant="45" id="eVN-Xt-68R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.26666666666666666" green="0.0" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -327,13 +337,16 @@
                             <constraint firstItem="LlE-df-2Wh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-10" id="VOq-6V-IAB"/>
                             <constraint firstItem="BD2-W5-D7J" firstAttribute="top" secondItem="ARK-0F-tJD" secondAttribute="bottom" constant="13" id="Xzi-aL-uyd"/>
                             <constraint firstAttribute="centerX" secondItem="ARK-0F-tJD" secondAttribute="centerX" id="YJC-at-La6"/>
+                            <constraint firstAttribute="centerX" secondItem="uIV-JD-Six" secondAttribute="centerX" id="frW-Xq-rLv"/>
                             <constraint firstAttribute="centerX" secondItem="nkP-8r-awy" secondAttribute="centerX" id="kxH-de-j0m"/>
+                            <constraint firstItem="uIV-JD-Six" firstAttribute="top" secondItem="BD2-W5-D7J" secondAttribute="bottom" constant="19" id="lSH-xA-MLa"/>
                             <constraint firstItem="ARK-0F-tJD" firstAttribute="top" secondItem="nkP-8r-awy" secondAttribute="bottom" constant="11" id="vny-aB-TPv"/>
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="lblError" destination="uIV-JD-Six" id="8t3-1b-Ste"/>
                         <outlet property="txtUsername" destination="nkP-8r-awy" id="YcA-q3-DQY"/>
                     </connections>
                 </viewController>
