@@ -36,10 +36,6 @@ class ViewController: UIViewController {
         
         loadParse()
         
-        let date = NSDate()
-        var x = resetDateTime(date)
-        
-        insertShift("68", x, "www")
         
         
         /*
