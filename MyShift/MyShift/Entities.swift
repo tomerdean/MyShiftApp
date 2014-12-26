@@ -50,7 +50,7 @@ func insertShift(userId: String, shiftDate: NSDate, shiftTime: String) -> AnyObj
     return shift.objectId
 }
 
-func getShiftsForManager(shiftDate: NSDate, shiftTime: String) -> [AnyObject] {
+func getUserShiftsForManager(shiftDate: NSDate, shiftTime: String) -> [AnyObject] {
     var result: [AnyObject]
     var query = PFQuery(className: "Shifts")
     
