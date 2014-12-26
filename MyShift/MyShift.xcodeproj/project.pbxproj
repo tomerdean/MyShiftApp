@@ -18,11 +18,11 @@
 		CA6B763A1A4C44DE00138996 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6B76391A4C44DE00138996 /* Images.xcassets */; };
 		CA6B763D1A4C44DE00138996 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA6B763B1A4C44DE00138996 /* LaunchScreen.xib */; };
 		CA6B76491A4C44DE00138996 /* MyShiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6B76481A4C44DE00138996 /* MyShiftTests.swift */; };
+		CAE01FD81A4D2BEB005F47C9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE01FD61A4D2BEB005F47C9 /* Default@2x.png */; };
+		CAE01FD91A4D2BEB005F47C9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE01FD71A4D2BEB005F47C9 /* Default.png */; };
 		CF00DB091A4D3656003BAA10 /* TableViewControllerEmployeeShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF00DB081A4D3656003BAA10 /* TableViewControllerEmployeeShift.swift */; };
 		CF062A3E1A4D27E500E528ED /* sun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF062A3D1A4D27E500E528ED /* sun.jpg */; };
 		CF062A401A4D287300E528ED /* moon.png in Resources */ = {isa = PBXBuildFile; fileRef = CF062A3F1A4D287300E528ED /* moon.png */; };
-		CAE01FD81A4D2BEB005F47C9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE01FD61A4D2BEB005F47C9 /* Default@2x.png */; };
-		CAE01FD91A4D2BEB005F47C9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE01FD71A4D2BEB005F47C9 /* Default.png */; };
 		CF36B1EA1A4C5A4B00676413 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF36B1E91A4C5A4B00676413 /* AudioToolbox.framework */; };
 		CF36B1ED1A4C5AAD00676413 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF36B1EB1A4C5AAD00676413 /* Bolts.framework */; };
 		CF36B1EE1A4C5AAD00676413 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF36B1EC1A4C5AAD00676413 /* Parse.framework */; };
@@ -66,11 +66,11 @@
 		CA6B76421A4C44DE00138996 /* MyShiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyShiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA6B76471A4C44DE00138996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA6B76481A4C44DE00138996 /* MyShiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShiftTests.swift; sourceTree = "<group>"; };
+		CAE01FD61A4D2BEB005F47C9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CAE01FD71A4D2BEB005F47C9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CF00DB081A4D3656003BAA10 /* TableViewControllerEmployeeShift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerEmployeeShift.swift; sourceTree = "<group>"; };
 		CF062A3D1A4D27E500E528ED /* sun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sun.jpg; sourceTree = "<group>"; };
 		CF062A3F1A4D287300E528ED /* moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moon.png; sourceTree = "<group>"; };
-		CAE01FD61A4D2BEB005F47C9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		CAE01FD71A4D2BEB005F47C9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CF36B1E91A4C5A4B00676413 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CF36B1EB1A4C5AAD00676413 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		CF36B1EC1A4C5AAD00676413 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -252,6 +252,7 @@
 				TargetAttributes = {
 					CA6B762C1A4C44DE00138996 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = N6RE5266QG;
 					};
 					CA6B76411A4C44DE00138996 = {
 						CreatedOnToolsVersion = 6.1.1;
