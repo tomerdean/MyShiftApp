@@ -72,11 +72,11 @@ class ViewControllerEmployeeEdit: UIViewController {
     }
     
     func SaveDate(dayOffset:Int, timeOfDay:Int) -> AnyObject! {
-    
+     
         var dayName:String = (timeOfDay == 1) ? "morning" : "evening"
         //userId: String, shiftDate: NSDate, shiftTime: String
         var time:NSDate! = addDaysToDate(NSDate(), 7 + dayOffset - getDayFromDate(NSDate()))
-        var result = insertShift(dayName, time, String(timeOfDay))
+        var result = insertShift(user_id, time, dayName)
         println("Sent date: \(time) Result=\(result)")
         return result
     
